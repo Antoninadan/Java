@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-//		// Обои ////////////////////////////////////////////
+//		// +++*** ////////////////////////////////////////////
 //		
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Input number of rows: ");
@@ -24,7 +24,7 @@ public class Main {
 //			System.out.println();
 //		}
 		
-//		// Факториал /////////////////////////////////////////////
+//		// Factorial /////////////////////////////////////////////
 //		
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Input int number [4; 16]: ");
@@ -43,13 +43,13 @@ public class Main {
 //			System.out.print("Number not in [4; 16]");
 //		}
 		
-//		// Таблица умножения на 5 ////////////////////////////////////
+//		// multiplication table by 5 ////////////////////////////////////
 //
 //		for (int i = 1; i <= 10; i++) {
 //			System.out.println(i + " * 5 = " + (i * 5));
 //		}
 	
-//		// Прямоугольник ///////////////////////////////////////////// 
+//		// rectangle ///////////////////////////////////////////// 
 //		
 //		Scanner sc = new Scanner(System.in);
 //
@@ -73,14 +73,14 @@ public class Main {
 //			System.out.println();
 //		}
 		
-//		// Треугольник ////////////////////////////////////////
+//		// triangle ////////////////////////////////////////
 //		
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Input height: ");
 //		int h = sc.nextInt();
-//		double count; // общее число циклов
-//		int sum = 0; // временная сумма для i
-//		int transfer = 1; // инкремент для println
+//		double count; 
+//		int sum = 0; 
+//		int transfer = 1; 
 //
 //		count = h * (h + 1) / 2 + h * (h - 1) / 2;
 //
@@ -99,7 +99,7 @@ public class Main {
 //			}
 //		}
 
-//		// Целые ///////////////////////////////////////////////
+//		// integers ///////////////////////////////////////////////
 //		
 //		int a = 0;
 //
@@ -116,7 +116,7 @@ public class Main {
 //
 //		}
 		
-//		// песочные часы ///////////////////////////////////////////////		
+//		// hourglass ///////////////////////////////////////////////		
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Input odd number: ");
 //		int number = sc.nextInt();
