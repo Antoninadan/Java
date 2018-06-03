@@ -8,9 +8,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-/*		// подсчет количества символа — 'b' /////////////////////////////////////////////////////////////////////
+/*		// count of symbols — 'b' /////////////////////////////////////////////////////////////////////
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите строку для проверки вхождения символа b:");
+		System.out.println("Input string for finding symbol 'b':");
 		String str = sc.nextLine();
 
 		char[] charMas = str.toCharArray();
@@ -21,10 +21,10 @@ public class Main {
 				summa++;
 			}
 		}
-		System.out.println("Кол-во символов b = " + summa);
+		System.out.println("Count b = " + summa);
 */
 		
-/*      // Дан массив {0,5,2,4,7,1,3,19} — написать программу для подсчета нечетных цифр ///////////////////////////
+/*      // We have {0,5,2,4,7,1,3,19} — count odd ///////////////////////////
 		int[] mas = { 0, 5, 2, 4, 7, 1, 3, 19 };
 		int summa = 0;
 
@@ -33,25 +33,25 @@ public class Main {
 				summa += element;
 			}
 		}
-		System.out.println("Кол-во нечетных = " + summa);
+		System.out.println("Odd = " + summa);
 */
 
-/*      // Создать массив с клавиатуры /////////////////////////////////////////////////////////////////////
+/*      // Create massive from keyboard /////////////////////////////////////////////////////////////////////
 		int[] mas;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите размер массива:");
+		System.out.println("Input size:");
 		int size = sc.nextInt();
 		mas = new int[size];
 
 		for (int i = 0; i < size; i++) {
-			System.out.println("Введите " + i + "-й элемент массива:");
+			System.out.println("Input " + i + "- element:");
 			mas[i] = sc.nextInt();
 		}
 
-		System.out.println("Вот ваш массив: " + Arrays.toString(mas));
+		System.out.println("Your massive: " + Arrays.toString(mas));
 */
 		
-/*		// Создать массив случайных чисел (размером 15 элементов) /////////////////////////////////////////////////
+/*		// Create random massive (15 elements) /////////////////////////////////////////////////
 		int size = 15;
 		int[] mas = new int[size];
 		Random rn = new Random();
@@ -59,20 +59,20 @@ public class Main {
 		for (int i = 0; i < mas.length; i++) {
 			mas[i] = rn.nextInt(15); 
 		}
-		System.out.println("Первый массив: " + Arrays.toString(mas));
+		System.out.println("First: " + Arrays.toString(mas));
 		
 		int[] mas2 = Arrays.copyOf(mas, size*2); // copy first elements
 		
 		for (int i = size; i < size*2; i++) {
 			mas2[i] = 2* mas[i-size];
 		}
-		System.out.println("Второй массив: " + Arrays.toString(mas2));
+		System.out.println("Second: " + Arrays.toString(mas2));
 */
 	
-/*		// Level - 2 перевернуть массив /////////////////////////////////////////////////////////////////////
+/*		// Level - 2 convert massive { 0, 5, 2, 4, 7, 1, 3, 19 } /////////////////////////////////////////////////////////////////////
 		
-		int[] mas = { 0, 5, 2, 4, 7, 1, 3, 19 }; // 8 чисел
-		// int[] mas = { 0, 5, 2, 4, 7, 1, 3, 19, 20 }; // 9 чисел
+		int[] mas = { 0, 5, 2, 4, 7, 1, 3, 19 }; // 8 digits
+		// int[] mas = { 0, 5, 2, 4, 7, 1, 3, 19, 20 }; // 9 digits
 
 		int limit = mas.length / 2;
 		int size = mas.length;
@@ -86,18 +86,18 @@ public class Main {
 		System.out.println(Arrays.toString(mas));
 */
 			
-/*		// Level - 2 перевернуть матрицу  /////////////////////////////////////////////////////////////////////
+/*		// Level - 2 invert matrix  /////////////////////////////////////////////////////////////////////
 		int[][] mas = { { 1, 2, 3, 4, 5, 6 }, { 1, 2, 3, 4, 5, 6 }, { 1, 2, 3, 4, 5, 6 }, { 1, 2, 3, 4, 5, 6 },
 				{ 1, 2, 3, 4, 5, 6 }, { 1, 2, 3, 4, 5, 6 } };
 
-		System.out.println("Для поворота на 90 введите '1', на 180 - '2', на 270 - '3'");
+		System.out.println("For invert on 90 input '1', on 180 - '2', on 270 - '3'");
 		Scanner sc = new Scanner(System.in);
 
 		int curv = sc.nextInt();
 		int size = mas.length;
 
-		// распечатать массив красиво
-		System.out.println("Исходный массив: ");
+		// print
+		System.out.println("Initial: ");
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				System.out.print(mas[i][j] + " ");
@@ -165,8 +165,7 @@ public class Main {
 			count -= 2;
 		}
 
-		// распечатать массив красиво
-		System.out.println("Перевернутый массив: ");
+		System.out.println("Invert: ");
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				System.out.print(mas[i][j] + " ");
