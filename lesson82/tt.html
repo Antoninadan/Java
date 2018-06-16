@@ -1,0 +1,619 @@
+								<div class="inner" id="msg_40534">1) РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РёР· РјР°СЃСЃРёРІР° С†РµР»С‹С…<br />С‡РёСЃРµР».<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">public class MassiveInt {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Random rn = new Random();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] mas = new int[19];<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; mas.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>mas[i] = rn.nextInt(85);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(Arrays.toString(mas));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Max Number: &quot; + maxNumber(mas));<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int maxNumber(int&#91;] mas) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int tempMax = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i : mas) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (i &gt; tempMax)<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>tempMax = i;<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return tempMax;<br /><span style="white-space: pre;">	</span>}<br /><br />}<br /></code>2) Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ РїР°СЂР°РјРµС‚СЂР°РјРё РєРѕС‚РѕСЂРѕРіРѕ СЏРІР»СЏСЋС‚СЃСЏ - С†РµР»РѕРµ С‡РёСЃР»Рѕ,<br />РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ Рё СЃС‚СЂРѕРєР°. Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕРЅ РєРѕРЅРєР°С‚РµРЅР°С†РёСЋ СЃС‚СЂРѕРєРё СЃ<br />СЃСѓРјРјРѕР№ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ Рё С†РµР»РѕРіРѕ С‡РёСЃР»Р°.<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.cmpaxgg;<br /><br />import java.util.Arrays;<br />import java.util.Random;<br /><br /><br />public class RandomDigits {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(concat(10, 5.8, &quot;Hello world &quot;));<br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static String concat(int a, double b, String c) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String result = c + (a + b);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return result;<br /><span style="white-space: pre;">	</span>}<span style="white-space: pre;">	</span><br />}<br /></code>3) Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ СЂРёСЃСѓСЋС‰РёР№ РЅР° СЌРєСЂР°РЅРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє РёР· Р·РІРµР·РґРѕС‡РµРє В«*В»<br />вЂ” РµРіРѕ РїР°СЂР°РјРµС‚СЂР°РјРё Р±СѓРґСѓС‚ С†РµР»С‹Рµ С‡РёСЃР»Р° РєРѕС‚РѕСЂС‹Рµ РѕРїРёСЃС‹РІР°СЋС‚ РґР»РёРЅСѓ Рё<br />С€РёСЂРёРЅСѓ С‚Р°РєРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°.<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.cmpaxgg;<br /><br />import java.util.Scanner;<br /><br />public class MethodOrthogon {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Input height&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int h = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Input widht&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int w = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Orthogon(h,w);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static void Orthogon(int h, int w) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt;= h; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int j = 1; j &lt;= w; j++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (i == 1 || i == h || j == 1 || j == w) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot;*&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot; &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br />}<br /></code>4) РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ СЂРµР°Р»РёР·СѓРµС‚ Р»РёРЅРµР№РЅС‹Р№ РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РІ РјР°СЃСЃРёРІРµ<br />С†РµР»С‹С… С‡РёСЃРµР». Р•СЃР»Рё С‚Р°РєРѕР№ СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІРµ РµСЃС‚СЊ С‚Рѕ РІРµСЂРЅРёС‚Рµ РµРіРѕ РёРЅРґРµРєСЃ,<br />РµСЃР»Рё РЅРµС‚ С‚Рѕ РјРµС‚РѕРґ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ С‡РёСЃР»Рѕ - В«-1В»<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.cmpaxgg;<br /><br />import java.util.Scanner;<br /><br />public class SearchElementMassive {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Input element: &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] mas = { -100, 305, 10, 108, 307, 4010, 45 };<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int element = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Result:&quot;+ searchElement(mas, element, 0));<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int searchElement(int&#91;] mas, int element, int temp) {<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; mas.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (mas[i] == element) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>temp = i;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return temp;<br /><span style="white-space: pre;">	</span>}<br /><br />}<br /></code>5) РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃС‚СЂРѕРєРµ С‚РµРєСЃС‚Р°.<br /><br /></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40534">
+								&#171; <em>РџРѕСЃР»РµРґРЅРµРµ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ: Р?СЋРЅСЏ 10, 2018, 11:59:40 pm РѕС‚ Serg1k</em> &#187;
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40535"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6919" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ Serg1k">Serg1k</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40535_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 22</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6919"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40535" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40535">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40535#msg40535" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #80 :</strong> Р?СЋРЅСЏ 11, 2018, 12:03:02 am &#187;</div>
+									<div id="msg_40535_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40535">5) РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃС‚СЂРѕРєРµ С‚РµРєСЃС‚Р°.<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.cmpaxgg;<br /><br />import java.util.Scanner;<br /><br />public class QuantityWordInText {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Input text: &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String text = sc.nextLine();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;In your string &quot; + wordQuant(text) + &quot; word(s)&quot;);<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>private static int wordQuant(String text) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String&#91;] words = text.split(&quot; &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return words.length;<br /><span style="white-space: pre;">	</span>}<br />}<br /></code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40535">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40544"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6928" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ HiddenCat">HiddenCat</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40544_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 8</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6928"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40544" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40544">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40544#msg40544" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #81 :</strong> Р?СЋРЅСЏ 11, 2018, 04:20:45 pm &#187;</div>
+									<div id="msg_40544_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40544"><span style="color: brown;" class="bbc_color"><strong>Alexander Ts</strong></span>,<br />РЎРїР°СЃРёР±Рѕ, РёСЃРїСЂР°РІРёР». <a href="https://gist.github.com/hlctt" class="bbc_link" target="_blank">https://gist.github.com/hlctt</a></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40544">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40548"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6924" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ YevgeniyLagunov">YevgeniyLagunov</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40548_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 16</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6924"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40548">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40548#msg40548" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #82 :</strong> Р?СЋРЅСЏ 11, 2018, 09:53:27 pm &#187;</div>
+									<div id="msg_40548_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40548">6.1.a<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Arrays;<br />import java.util.Random;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] a = new int[10];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Random rm = new Random();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; a.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>a[i] = rm.nextInt(10);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(Arrays.toString(a));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР° &quot; + maxInMassiv(a) );<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int maxInMassiv(int&#91;] a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int max = a[0];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt; a.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (a[i] &gt; max) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>max = a[i];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return max;<br /><span style="white-space: pre;">	</span>}<br /><br />}</code><br />6.1.b<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int a = 5;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>double b = 4.36;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String c = &quot;lalalala&quot;;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(concatezia(a, b, c));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static String concatezia(int a, double b, String c) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String rezult = c + b + a;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return rezult;<br /><span style="white-space: pre;">	</span>}<br /><br />}<br /></code><br />6.1.c<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Random;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Random rm = new Random();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int a = rm.nextInt(10);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int b = rm.nextInt(10);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’С‹СЃРѕС‚Р° СЂР°РІРЅР° &quot; + a);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р”Р»РёРЅРЅР° СЂР°РІРЅР° &quot; + b);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>priamougolnik(a, b);<br /><br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static void priamougolnik(int a, int b) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; a; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int j = 0; j &lt; b; j++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&#039;*&#039;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><br />}</code><br />6.1.d<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Scanner;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] a = { 4, 5, 7, 32, 342, -8 };<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’РІРµРґРёС‚Рµ РёСЃРєРѕРјРѕРµ С‡РёСЃР»Рѕ&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int b = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р?РЅРґРµРєСЃ РёСЃРєРѕРјРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СЂР°РІРµРЅ &quot; + indeksIskomogoElement(b, a));<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int indeksIskomogoElement(int a, int&#91;] b) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; b.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (b[i] == a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return i;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return -1;<br /><span style="white-space: pre;">	</span>}<br /><br />}</code><br />6.1.e<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Scanner;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String v = sc.nextLine();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃС‚СЂРѕРєРµ СЂР°РІРЅР° &quot; + kolSlovVStroke(v));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static int kolSlovVStroke(String a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int kol = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String&#91;] b = a.split(&quot; &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>kol = b.length;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return kol;<br /><span style="white-space: pre;">	</span>}<br /><br />}</code><br />6.2.a<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Arrays;<br />import java.util.Scanner;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’РІРµРґРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ Р±РµР· РїСЂРѕР±РµР»РѕРІ. РњРёРјРёРЅСѓРј 4 СЌР»РµРјРµРЅС‚Р°&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String s = sc.nextLine();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] a = perevodMasStringVMasInteger(s);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (poisk1(a) != 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚ &quot; + poisk1(a));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else if (poisk2(a) != 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚ &quot; + poisk2(a));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else if (poisk3(a) != 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚ &quot; + poisk3(a));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else if (poisk4(a) != 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚ &quot; + poisk4(a));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’С‹ РІРІРµР»Рё РЅРµ РєРѕСЂСЂРµРєС‚РЅСѓСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int poisk1(int&#91;] a) {<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int x = a[1] - a[0];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int schetchik = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt; a.length - 1; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if ((a[i + 1] - a[i]) == x) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>schetchik++;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (schetchik == a.length - 2) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return (a[a.length - 1] + x);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int poisk2(int&#91;] a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int x;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if ((a[1] % a[0]) == 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>x = a[1] / a[0];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int schetchik = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt; a.length - 1; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if ((a[i + 1] / a[i]) == x &amp;&amp; (a[i + 1] % a[i]) == 0) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>schetchik++;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (schetchik == a.length - 2) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return (a[a.length - 1] * x);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int poisk3(int&#91;] a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int x = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; a.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (a[i] == (i + 1) * (i + 1)) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>x++;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (x == a.length) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return (a.length + 1) * (a.length + 1);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>public static int poisk4(int&#91;] a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int x = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; a.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (a[i] == (i + 1) * (i + 1) * (i + 1)) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>x++;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (x == a.length) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return (a.length + 1) * (a.length + 1) * (a.length + 1);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int&#91;] perevodMasStringVMasInteger(String a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String&#91;] strArr = a.split(&quot;,&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] numArr = new int[strArr.length];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; strArr.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>numArr[i] = Integer.parseInt(strArr[i]);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return numArr;<br /><span style="white-space: pre;">	</span>}<br />}<br /></code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40548">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40558"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ Alexander Ts">Alexander Ts</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40558_extra_info">
+								<li class="membergroup">РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё</li>
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 8719</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40558" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40558">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40558#msg40558" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #83 :</strong> Р?СЋРЅСЏ 12, 2018, 10:55:39 am &#187;</div>
+									<div id="msg_40558_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40558"><br /><strong><span style="color: maroon;" class="bbc_color">YevgeniyLagunov</span></strong> <br /><br />Р РµС€РµРЅРёРµ РІРµСЂРЅРѕРµ</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40558">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40567"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6927" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ SerS">SerS</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40567_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 4</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6927"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40567">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40567#msg40567" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #84 :</strong> Р?СЋРЅСЏ 12, 2018, 01:10:38 pm &#187;</div>
+									<div id="msg_40567_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40567"><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РёР· РјР°СЃСЃРёРІР° С†РµР»С‹С…<br />С‡РёСЃРµР».<br />package practice7;<br /><br />public class Max {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(maxInt(7, 5, -10, 8, 9, 1, 18));<br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static int maxInt(int... m) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int max = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i : m) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (i&gt;max) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>max = i;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return max;<br /><span style="white-space: pre;">	</span>}<br /><br />}<br />&nbsp;<br />Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ РїР°СЂР°РјРµС‚СЂР°РјРё РєРѕС‚РѕСЂРѕРіРѕ СЏРІР»СЏСЋС‚СЃСЏ - С†РµР»РѕРµ С‡РёСЃР»Рѕ,<br />РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ Рё СЃС‚СЂРѕРєР°.<br />package com.gmail.borserb;<br /><br />import java.util.Scanner;<br /><br />public class Cate {<br /><br /><span style="white-space: pre;">	</span>public static String cateCate(int a, double b, String c) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return Integer.toString(a) + Double.toString(b) + c;<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int a;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>double b;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String c;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;input int, double, string&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>a = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>b = sc.nextDouble();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>c = sc.next();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(cateCate(a, b, c));<br /><span style="white-space: pre;">	</span>}<br /><br />}<br /><br /><br />Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ СЂРёСЃСѓСЋС‰РёР№ РЅР° СЌРєСЂР°РЅРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє РёР· Р·РІРµР·РґРѕС‡РµРє В«*В»<br />package com.gmail.borserb;<br /><br />import java.util.Scanner;<br /><br />public class Rectangle {<br /><br /><span style="white-space: pre;">	</span>public static void rectangle(int x, int y) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt;= x; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int j = 1; j &lt;= y; j++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (i == 1 || i == x || j == 1 || j == y) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot;*&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot; &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int x;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int y;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;input x and y&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>x = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>y = sc.nextInt();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>rectangle(x,y);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span>}<br />}<br /><br />РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃС‚СЂРѕРєРµ С‚РµРєСЃС‚Р°.<br />package practice7;<br /><br />public class Words {<br /><br /><span style="white-space: pre;">	</span>public static int words(String a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>char&#91;] aChar = a.toCharArray();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int k = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; aChar.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (aChar[i] == &#039; &#039;) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>k++;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return k + 1;<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(words(&quot;fsf e wrwrw3 446gff sf 46546&quot;));<br /><span style="white-space: pre;">	</span>}<br /><br />}<br /><br /><br />РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ СЂРµР°Р»РёР·СѓРµС‚ Р»РёРЅРµР№РЅС‹Р№ РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РІ РјР°СЃСЃРёРІРµ<br />С†РµР»С‹С… С‡РёСЃРµР». Р•СЃР»Рё С‚Р°РєРѕР№ СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІРµ РµСЃС‚СЊ С‚Рѕ РІРµСЂРЅРёС‚Рµ РµРіРѕ РёРЅРґРµРєСЃ,<br />РµСЃР»Рё РЅРµС‚ С‚Рѕ РјРµС‚РѕРґ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ С‡РёСЃР»Рѕ - В«-1В»<br />package practice7;<br /><br />public class Find {<br /><span style="white-space: pre;">	</span>public static int findIndex(int&#91;] m, int a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int index = -1;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; m.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (m[i] == a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>index = i;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} <br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return index;<br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] m = { 1, 2, 8, 6, 9, -1, 82 };<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(findIndex(m, 828));<br /><br /><span style="white-space: pre;">	</span>}<br /><br />}<br /><br /><br /><br /></code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40567">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40574"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ Alexander Ts">Alexander Ts</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40574_extra_info">
+								<li class="membergroup">РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё</li>
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 8719</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40574" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40574">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40574#msg40574" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #85 :</strong> Р?СЋРЅСЏ 12, 2018, 11:03:31 pm &#187;</div>
+									<div id="msg_40574_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40574"><strong><span style="color: maroon;" class="bbc_color">SerS</span></strong><br /><br />1.<span style="color: red;" class="bbc_color"> РќРµ РІРµСЂРЅРѕ.</span> РўР°Рє РґР»СЏ РјР°СЃСЃРёРІР° РІРёРґР° {-4,-2.-9} РІР°С€ РєРѕРґ РІРµСЂРЅРµС‚ 0, Р° РµРіРѕ С‚Р°Рј РґР°Р¶Рµ РЅРµС‚.<br /><br />Р’ РѕСЃС‚Р°Р»СЊРЅРѕРј СЂРµС€РµРЅРёРµ РІРµСЂРЅРѕ</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40574">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40590"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6928" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ HiddenCat">HiddenCat</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40590_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 8</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6928"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40590" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40590">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40590#msg40590" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #86 :</strong> Р?СЋРЅСЏ 13, 2018, 09:30:29 pm &#187;</div>
+									<div id="msg_40590_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40590">07.06 <a href="https://gist.github.com/" class="bbc_link" target="_blank">https://gist.github.com/</a></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40590">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40592"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6927" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ SerS">SerS</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40592_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 4</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6927"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40592">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40592#msg40592" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #87 :</strong> Р?СЋРЅСЏ 13, 2018, 10:11:32 pm &#187;</div>
+									<div id="msg_40592_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40592"><a href="https://github.com/borserb/HomeWork8" class="bbc_link" target="_blank">https://github.com/borserb/HomeWork8</a></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40592">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40596"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ Alexander Ts">Alexander Ts</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40596_extra_info">
+								<li class="membergroup">РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё</li>
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 8719</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=1293"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=emailuser;sa=email;msg=40596" rel="nofollow"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/email_sm.gif" alt="E-mail" title="E-mail" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40596">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40596#msg40596" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #88 :</strong> Р?СЋРЅСЏ 13, 2018, 10:49:17 pm &#187;</div>
+									<div id="msg_40596_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40596"><br /><strong><span style="color: maroon;" class="bbc_color">HiddenCat</span></strong> <br />Рђ СѓСЃР»РѕРІРёРµ Р·Р°РґР°С‡Рё РјРѕР¶РµС‚Рµ РІС‹Р»РѕР¶РёС‚СЊ? Рђ С‚Рѕ РЅРµРїРѕРЅСЏС‚РЅРѕ РѕС‚РєСѓРґР° РѕРЅР°.<br /><br /><br /><strong><span style="color: maroon;" class="bbc_color">SerS</span></strong><br />Р РµС€РµРЅРёРµ РІРµСЂРЅРѕ.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40596">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg40600"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6924" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ YevgeniyLagunov">YevgeniyLagunov</a>
+							</h4>
+							<ul class="reset smalltext profile_display" id="msg_40600_extra_info">
+								<li class="postgroup">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</li>
+								<li class="stars"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/star.gif" alt="*" /></li>
+								<li class="postcount">РЎРѕРѕР±С‰РµРЅРёР№: 16</li>
+								<li class="profile">
+									<ul>
+										<li><a href="https://prog.kiev.ua/forum/index.php?action=profile;u=6924"><img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/icons/profile_sm.gif" alt="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" title="РџСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ" /></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_40600">
+										<a href="https://prog.kiev.ua/forum/index.php?topic=3626.msg40600#msg40600" rel="nofollow">Re: Java_Start_School_Alexander_15_05_2018</a>
+									</h5>
+									<div class="smalltext">&#171; <strong>РћС‚РІРµС‚ #89 :</strong> Р?СЋРЅСЏ 13, 2018, 11:44:54 pm &#187;</div>
+									<div id="msg_40600_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_40600">7.1.a<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Calendar;<br />import java.util.Date;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Calendar cl1 = Calendar.getInstance();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Calendar cl2 = Calendar.getInstance();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>cl1.set(Calendar.MONTH, Calendar.JUNE);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>cl2.set(Calendar.MONTH, Calendar.MAY);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Date date1 = cl1.getTime();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Date date2 = cl2.getTime();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(date1);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(date2);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(date1.getTime() - date2.getTime());<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><br /><span style="white-space: pre;">	</span>}<br /><br />}<br /></code>7.1.b<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Arrays;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] array = { 1, 213, 4536, 213, -8 };<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(Arrays.toString(array));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>arraysToString(array);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><br /><br /><span style="white-space: pre;">	</span>}<br /><br /><span style="white-space: pre;">	</span>public static void arraysToString(int&#91;] a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot;[&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; a.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if (i != a.length - 1) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(a[i] + &quot;, &quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>} else {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(a[i]);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.print(&quot;]&quot;);<br /><span style="white-space: pre;">	</span>}<br /><br />}</code>7.1.c<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />import java.util.Scanner;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Scanner sc = new Scanner(System.in);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РІ РґРІРѕРёС‡С…РЅРѕР№ СЃРёСЃС‚РµРјРµ РёСЃС‡РёСЃР»РµРЅРёСЏ&quot;);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String a = sc.nextLine();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ СЌС‚Рѕ &quot; + Integer.parseInt(a, 2));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(&quot;Р’ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ СЌС‚Рѕ &quot; + twoInTen(a));<br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>public static int twoInTen(String a) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>char&#91;] b = a.toCharArray();<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int&#91;] c = new int[b.length];<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 0; i &lt; c.length; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>c[i] = Character.digit(b[i], 10);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int kef = 1;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>int rezult = 0;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = c.length -1 ; i &gt;= 0; i--) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>rezult = rezult + c[i] * kef;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>kef = kef * 2;<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return rezult;<br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span><br />}</code>7.1.d<br /><div class="codeheader">РљРѕРґ: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Р’С‹РґРµР»РёС‚СЊ]</a></div><code class="bbc_code">package com.gmail.lagunov;<br /><br />public class Main {<br /><br /><span style="white-space: pre;">	</span>public static void main(String&#91;] args) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>// TODO Auto-generated method stub<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>for (int i = 1; i &lt;= 10; i++) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>System.out.println(doubleTosTring(Math.PI, i + 1));<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>}<br /><span style="white-space: pre;">	</span>public static String doubleTosTring(double number, int n) {<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>String rezult = String.format(&quot;%.&quot; + n + &quot;f&quot;, number);<br /><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>return rezult;<br /><span style="white-space: pre;">	</span>}<br />}<br /></code></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_40600">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/ip.gif" alt="" />
+								Р—Р°РїРёСЃР°РЅ
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="https://prog.kiev.ua/forum/index.php?action=printpage;topic=3626.0" rel="new_win nofollow"><span class="last">РџРµС‡Р°С‚СЊ</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">РЎС‚СЂР°РЅРёС†С‹: <a class="navPages" href="https://prog.kiev.ua/forum/index.php?topic=3626.0">1</a> <span style="font-weight: bold;" onclick="expandPages(this, 'https://prog.kiev.ua/forum/index.php'+'?topic=3626.%1$d', 15, 45, 15);" onmouseover="this.style.cursor = 'pointer';"> ... </span><a class="navPages" href="https://prog.kiev.ua/forum/index.php?topic=3626.45">4</a> <a class="navPages" href="https://prog.kiev.ua/forum/index.php?topic=3626.60">5</a> [<strong>6</strong>] <a class="navPages" href="https://prog.kiev.ua/forum/index.php?topic=3626.90">7</a> </div>
+				<div class="nextlinks_bottom"><a href="https://prog.kiev.ua/forum/index.php?topic=3626.0;prev_next=prev#new">&laquo; РїСЂРµРґС‹РґСѓС‰Р°СЏ С‚РµРјР°</a> <a href="https://prog.kiev.ua/forum/index.php?topic=3626.0;prev_next=next#new">СЃР»РµРґСѓСЋС‰Р°СЏ С‚РµРјР° &raquo;</a></div>
+			</div>
+	<div class="nav_box">
+	<img src="https://www.prog.kiev.ua/forum/Themes/meridian/images/nav.png" class="nav_box_img" alt="" />
+	<span class="upperframe"><span></span></span>
+	<div class="navigate_section roundframe">
+		<ul>
+			<li>
+			<a href="https://prog.kiev.ua/forum/index.php"><span>&#1050;&#1091;&#1088;&#1089;&#1099; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;</span></a> &#187;
+			</li>
+			<li>
+			<a href="https://prog.kiev.ua/forum/index.php#c2"><span>РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ</span></a> &#187;
+			</li>
+			<li>
+			<a href="https://prog.kiev.ua/forum/index.php?board=2.0"><span>Java SE</span></a> &#187;
+			</li>
+			<li class="last">
+			<a href="https://prog.kiev.ua/forum/index.php?topic=3626.0"><span>Java_Start_School_Alexander_15_05_2018</span></a>
+			</li>
+		</ul>
+	</div>
+	<span class="lowerframe"><span></span></span>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+				<script type="text/javascript" src="https://www.prog.kiev.ua/forum/Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: true,
+						iTopicId: 3626,
+						iStart: 75,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: "https://www.prog.kiev.ua/forum/Themes/meridian/images",
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sImageCollapsed: "collapse.gif",
+						sImageExpanded: "expand.gif",
+						sJumpAnchor: "quickreply"
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 3626,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="b8fa083e4" value="ff194c86688111c7183d9fa2da8c729e" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="3626" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="РЎРѕС…СЂР°РЅРёС‚СЊ" tabindex="2" onclick="return oQuickModify.modifySave(\'ff194c86688111c7183d9fa2da8c729e\', \'b8fa083e4\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="РћС‚РјРµРЅРёС‚СЊ" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="https://prog.kiev.ua/forum/index.php'+'?topic=3626.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'РўРµРјР°: %subject% &nbsp;(РџСЂРѕС‡РёС‚Р°РЅРѕ 669 СЂР°Р·)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">РџРµСЂРµР№С‚Рё РІ:<" + "/label> %dropdown_list%",
+							iCurBoardId: 2,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Java SE",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "РґР°"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 2,
+							iTopicId: 3626,
+							sSessionId: "ff194c86688111c7183d9fa2da8c729e",
+							sSessionVar: "b8fa083e4",
+							sLabelIconList: "Р?РєРѕРЅРєР° СЃРѕРѕР±С‰РµРЅРёСЏ",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		</div>
+	</div></div>
+  
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+      <li class="copyright">Copyright В© 2012-2017 <a href="https://www.linkedin.com/in/ievgiienko">РЎРџР” Р•РІРіРёРµРЅРєРѕ Р’.Р’.</a> Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</li>
+			<li><a id="button_rss" href="https://prog.kiev.ua/forum/index.php?action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="https://prog.kiev.ua/forum/index.php?wap2" class="new_win"><span>РњРѕР±РёР»СЊРЅР°СЏ РІРµСЂСЃРёСЏ</span></a></li>
+		</ul>
+	</div></div>
+</div>
+</body></html>
+
