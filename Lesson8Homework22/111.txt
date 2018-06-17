@@ -12,7 +12,7 @@ public class Main {
 		//File file = new File("text.txt");
 		File file = new File("FAHRENHEIT_451.txt");
 		String str = loadStrFromFile(file);
-		
+
 		int[] mas = new int[130];
 		int ascii;
 
@@ -48,7 +48,7 @@ public class Main {
 
 		// Print
 		for (String element : masResult) {
-			System.out.println(element.replaceFirst("(0){1,}", ""));
+			System.out.println(element);
 		}
 	}
 
