@@ -2,30 +2,31 @@ package uaimail100;
 
 public class Network {
 
-	private String[] phoneReg = new String [1000];
-	private int phoneCount = 0;
-	
+	private String[] masNumber = new String[1000]; 
+	private Phone[] masPhone = new Phone[1000]; 
+	private int phoneCount = 0; 
+
 	
 	public Network() {
 		super();
 	}
 
-
-	public void phoneRegistration(String number) {
-		phoneReg[phoneCount] = number;
+	
+	public void phoneRegistration(Phone phone) { 
+		masPhone[phoneCount] = phone;
+		masNumber[phoneCount] = phone.getNumber();
 		phoneCount++;
 	}
 
 	
-	public boolean isPhoneRegistrated(String number) {
-	
-		for (int i=0; i < phoneCount; i++) {
-			if(phoneReg[i] == number) {
-				return true; 
+	public boolean isCalledPhone(Network network, String number) {
+		boolean result = false;
+		for (int i = 0; i < phoneCount; i++) {
+			if (masNumber[i] == number) {
+				masPhone[i].takeCall();
+				result = true;
 			}
 		}
-		return false; 
+		return result;
 	}
-	
-	
 }
