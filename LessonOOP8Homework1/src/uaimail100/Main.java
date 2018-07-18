@@ -37,13 +37,12 @@ public class Main {
 		}
 
 		System.out.println("Group 1:");
-		group1.printStudents();
+		System.out.println(group1);				
 		System.out.println();
 		
 		System.out.println("Group 2:");
-		group2.printStudents();
-		System.out.println();
-						
+		System.out.println(group2);
+		System.out.println();				
 		
 		File file=new File("group1.txt");
 		
@@ -67,11 +66,9 @@ public class Main {
 		System.out.println("Groups after reading: _____________________");
 		System.out.println();
 		for (Group gr : g) {
-			gr.printStudents();
+			System.out.println(gr);
 			System.out.println();
 		}
-
-		
 		
 	}
 

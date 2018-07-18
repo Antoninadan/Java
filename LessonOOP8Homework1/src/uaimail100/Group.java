@@ -13,7 +13,17 @@ public class Group implements Serializable {
 	
 	@Override
 	public String toString() {
-		return "Group [length=" + length + ", students=" + Arrays.toString(students) + "]";
+		String str = "";
+		
+		for (Student s : students) {
+			if (s == null) {
+				str += null + System.lineSeparator();
+			} else {
+				str += s.toString() + System.lineSeparator(); 
+			}
+		}
+		
+		return str;
 	}
 
 
