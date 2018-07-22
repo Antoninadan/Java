@@ -34,11 +34,11 @@ public class Dictionary implements Serializable {
 
 	public void addDictionary() {
 	
-	map.put("tree", "дерево");
-	map.put("hole", "дірка");
-	map.put("apple", "яблуко");
-	map.put("phone", "телефон");
-	map.put("stop", "стоп");
+		map.put("tree", "дерево");
+		map.put("hole", "дірка");
+		map.put("apple", "яблуко");
+		map.put("phone", "телефон");
+		map.put("stop", "стоп");
 	
 	}
 }
