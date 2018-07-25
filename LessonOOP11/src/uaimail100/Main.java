@@ -21,16 +21,16 @@ public class Main {
 //		 System.out.println(e.toString());
 //		 }
 
-//		 // get html text
-//		 String urlAddress = "https://prog.kiev.ua/forum/index.php/board,2.0.html";
-//		 String htmlText = "";
-//		
-//		 try {
-//		 htmlText = InetWork.getStribgFromURL(urlAddress, "UTF-8");
-//		 } catch (IOException e) {
-//		 e.printStackTrace();
-//		 }
-//		 System.out.println(htmlText);
+		 // get html text
+		 String urlAddress = "https://prog.kiev.ua/forum/index.php/board,2.0.html";
+		 String htmlText = "";
+		
+		 try {
+		 htmlText = InetWork.getStribgFromURL(urlAddress, "UTF-8");
+		 } catch (IOException e) {
+		 e.printStackTrace();
+		 }
+		 System.out.println(htmlText);
 
 //		//save in directory file from url 
 //		String urlAddress2 = "https://soundcloud.com/radiosvoboda/ukrana-ochima-nmtsv-100-rokv-tomu-nezrozumla-maloperedbachuvana";
@@ -94,36 +94,36 @@ public class Main {
 //		System.out.println("END");
 
 		
-		// ServerSOCKET in Thread
-		String ansver = "";
-		Group gr = new Group("PN121");
-		gr.addStudent(new Student("Ivanov", "Ivan", 3));
-		gr.addStudent(new Student("Petrov", "Petr", 4));
-		gr.addStudent(new Student("Sidorov", "Sidr", 5));
-		gr.addStudent(new Student("Garbuzov", "Grbuz", 1));
-		
-		ansver += "<html><head><title>Student</title> <meta charset='utf-8'></head><body><p>Список студентов группы: " + gr.getName() + "</p><br>";
-		ansver += "<table border='2' cellpadding='5' ><tr><th>Фамилия</th><th>Имя</th><th>Курс</th></tr>";
-		
-		Student[] starr = gr.getGroup();
-		
-		for (int i = 0; i < starr.length; i++) {
-			ansver += "<tr>";
-			ansver += "<td>" + starr[i].getName() + "</td>";
-			ansver += "<td>" + starr[i].getLastname() + "</td>";
-			ansver += "<td>" + starr[i].getCourse() + "</td>";
-			ansver += "</tr>";
-		}
-		ansver += "</table></body></html>";
-		
-		try (ServerSocket soc = new ServerSocket(8080)) {
-			for (;;) {
-				Socket clisoc = soc.accept();
-				Client client = new Client(clisoc, ansver);
-			}
-		} catch (IOException e) {
-			System.out.println("Error to server Socket Open!!!");
-		}
+//		// ServerSOCKETs in Threads
+//		String ansver = "";
+//		Group gr = new Group("PN121");
+//		gr.addStudent(new Student("Ivanov", "Ivan", 3));
+//		gr.addStudent(new Student("Petrov", "Petr", 4));
+//		gr.addStudent(new Student("Sidorov", "Sidr", 5));
+//		gr.addStudent(new Student("Garbuzov", "Grbuz", 1));
+//		
+//		ansver += "<html><head><title>Student</title> <meta charset='utf-8'></head><body><p>Список студентов группы: " + gr.getName() + "</p><br>";
+//		ansver += "<table border='2' cellpadding='5' ><tr><th>Фамилия</th><th>Имя</th><th>Курс</th></tr>";
+//		
+//		Student[] starr = gr.getGroup();
+//		
+//		for (int i = 0; i < starr.length; i++) {
+//			ansver += "<tr>";
+//			ansver += "<td>" + starr[i].getName() + "</td>";
+//			ansver += "<td>" + starr[i].getLastname() + "</td>";
+//			ansver += "<td>" + starr[i].getCourse() + "</td>";
+//			ansver += "</tr>";
+//		}
+//		ansver += "</table></body></html>";
+//		
+//		try (ServerSocket soc = new ServerSocket(8080)) {
+//			for (;;) {
+//				Socket clisoc = soc.accept();
+//				Client client = new Client(clisoc, ansver);
+//			}
+//		} catch (IOException e) {
+//			System.out.println("Error to server Socket Open!!!");
+//		}
 		
 		
 	}
