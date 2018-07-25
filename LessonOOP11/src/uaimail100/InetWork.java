@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class InetWork {
+	
 	public static String getStribgFromURL(String urlAddress, String coding) throws IOException {
 		String result = "";
 		URL url = new URL(urlAddress);
@@ -24,11 +25,9 @@ public class InetWork {
 			for (; (temp = br.readLine()) != null;) {
 				result += temp + System.lineSeparator();
 			}
-
 		} catch (IOException e) {
 			throw e;
 		}
-
 		return result;
 	}
 
@@ -50,7 +49,6 @@ public class InetWork {
 			for (; (byteRead = is.read(buffer))>0;) {
 				os.write(buffer, 0, byteRead); 
 			}
-
 		} catch (IOException e) {
 			throw e;
 		}
