@@ -38,6 +38,8 @@ public class loginClass extends HttpServlet {
 
             Article[] articleMas = {articleMas0, articleMas1, articleMas2};
 
+            req.setAttribute("articleMas", articleMas); // for test
+
             req.setAttribute("articleMas[0].name", articleMas[0].getName());
             req.setAttribute("articleMas[0].content", articleMas[0].getContent());
             req.setAttribute("articleMas[0].date", articleMas[0].getDate());

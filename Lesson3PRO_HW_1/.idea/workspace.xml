@@ -10,18 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8edb6d0-628a-492d-aee8-d97124b7d3b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ua/i/mail100/mainClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson2HW1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2HW1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson3PRO/out/artifacts/Lesson3PRO_war_exploded/WEB-INF/classes/ua/i/mail100/submitPageClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson3PRO/out/artifacts/Lesson3PRO_war_exploded/WEB-INF/classes/ua/i/mail100/submitPageClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson3PRO/out/production/Lesson3PRO/ua/i/mail100/submitPageClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson3PRO/out/production/Lesson3PRO/ua/i/mail100/submitPageClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/articles.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP4Homework1/src/uaimail100/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP4Homework1/src/uaimail100/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,9 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,15 +55,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="715" />
-          <entry key="jsp" value="404" />
+          <entry key="java" value="731" />
+          <entry key="jsp" value="406" />
           <entry key="xml" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="715" />
-          <entry key="JSP" value="404" />
+          <entry key="JAVA" value="731" />
+          <entry key="JSP" value="406" />
           <entry key="XML" value="98" />
         </counts>
       </usages-collector>
@@ -74,7 +74,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/mainClass.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/loginClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+            <state relative-caret-position="323">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/articles.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -123,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="476">
               <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
             </state>
           </provider>
@@ -132,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="32">
               <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
@@ -189,9 +189,9 @@
         <option value="$PROJECT_DIR$/src/ua/i/mail100/Article.java" />
         <option value="$PROJECT_DIR$/src/ua/i/mail100/mainClass.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" />
         <option value="$PROJECT_DIR$/src/ua/i/mail100/articleClass.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" />
         <option value="$PROJECT_DIR$/web/articles.jsp" />
       </list>
     </option>
@@ -210,9 +210,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1937" />
-    <option name="y" value="44" />
-    <option name="width" value="1219" />
+    <option name="x" value="344" />
+    <option name="y" value="17" />
+    <option name="width" value="1551" />
     <option name="height" value="1033" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -255,15 +255,15 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537122429119" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../servlet-api-2.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -366,47 +366,48 @@
       <option name="presentableId" value="Default" />
       <updated>1537082336201</updated>
       <workItem from="1537082341828" duration="18149000" />
+      <workItem from="1537972880277" duration="1246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18149000" />
+    <option name="totallyTimeSpent" value="19395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1937" y="44" width="1219" height="1033" extended-state="0" />
+    <frame x="344" y="17" width="1551" height="1033" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15444349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12005366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.32925472" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32925472" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28698555" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28698555" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32925472" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -474,6 +475,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/mainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -481,20 +489,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -510,18 +504,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/loginClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+        <state relative-caret-position="323">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/articles.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>

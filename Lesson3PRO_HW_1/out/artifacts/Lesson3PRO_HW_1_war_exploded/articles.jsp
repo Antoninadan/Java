@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<%= request.getAttribute("articleMas"[0].name) %><br>
+
 <table border="1">
     <tr>
         <td> Name</td>
