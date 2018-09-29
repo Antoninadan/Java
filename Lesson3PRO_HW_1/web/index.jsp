@@ -1,4 +1,4 @@
-<%--
+<%@ page import="ua.i.mail100.Article" %><%--
   Created by IntelliJ IDEA.
   User: User
   Date: 16.09.2018
@@ -12,35 +12,23 @@
 </head>
 <body>
 
-<%= request.getAttribute("message") %><br>
-
 <form action="/login" method="POST">
-    Login: <input type = "text" name = "login">
-    Password: <input type = "password" name = "password">
+    Login: <input type="text" name="login">
+    Password: <input type="password" name="password">
     <input type="submit"/>
 </form>
 
-<%--<script type='text/javascript'>--%>
-    <%--var n = 9;--%>
-    <%--var i = 1;--%>
+<% if (request.getAttribute("message") != null) {%>
+    <%= request.getAttribute("message") %>
+<%}%>
 
-    <%--document.write("< table border = 1 > ");--%>
-    <%--while (i <= n) {--%>
-        <%--document.write('<tr>');--%>
-        <%--var j = 1;--%>
-        <%--while (j <= n) {--%>
-            <%--document.write('<td>');--%>
-            <%--document.write(i * j);--%>
-            <%--document.write("</td>");--%>
-            <%--j++;--%>
-        <%--}--%>
-        <%--document.write("</tr>");--%>
-        <%--i++;--%>
-    <%--}--%>
+<% if (request.getAttribute("sessionLogin") != null) {%>
+    <%= request.getAttribute("sessionLogin") %>
+<%}%>
 
-    <%--document.write("</table>");--%>
-
-<%--</script>--%>
+<% if (request.getAttribute("articleMas") != null) {%>
+    <%= ((Article[]) request.getAttribute("articleMas"))[1].getName() %>
+<%}%>
 
 </body>
 </html>

@@ -14,9 +14,9 @@ public class loginClass extends HttpServlet {
     private Map<String, String> users = new HashMap<>();
 
     {
-        users.put("user1", "password1");
-        users.put("user2", "password2");
-        users.put("user3", "password3");
+        users.put("user1", "1");
+        users.put("user2", "2");
+        users.put("user3", "3");
     }
 
     @Override
@@ -24,10 +24,8 @@ public class loginClass extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
 
-        if(users.containsKey(login) && users.get(login).equals(password)) {
-            req.setAttribute("message", " ");
+        if (users.containsKey(login) && users.get(login).equals(password)) {
 
-            //
             String content1 = "Mercedes driver Lewis Hamilton produced one of the best laps of his career to take a surprise pole position for the Singapore Grand Prix.";
             String content2 = "Navigating a new place can be challenging no matter where in the world it is, but these five cities make day-to-day living a lot easier than others.";
             String content3 = "Plenty of actors make music and, in most cases, it doesn't seem so unexpected";
@@ -38,28 +36,18 @@ public class loginClass extends HttpServlet {
 
             Article[] articleMas = {articleMas0, articleMas1, articleMas2};
 
-            req.setAttribute("articleMas", articleMas); // for test
-
-            req.setAttribute("articleMas[0].name", articleMas[0].getName());
-            req.setAttribute("articleMas[0].content", articleMas[0].getContent());
-            req.setAttribute("articleMas[0].date", articleMas[0].getDate());
-            req.setAttribute("articleMas[0].username", articleMas[0].getUsername());
-
-            req.setAttribute("articleMas[1].name", articleMas[1].getName());
-            req.setAttribute("articleMas[1].content", articleMas[1].getContent());
-            req.setAttribute("articleMas[1].date", articleMas[1].getDate());
-            req.setAttribute("articleMas[1].username", articleMas[1].getUsername());
-
-            req.setAttribute("articleMas[2].name", articleMas[2].getName());
-            req.setAttribute("articleMas[2].content", articleMas[2].getContent());
-            req.setAttribute("articleMas[2].date", articleMas[2].getDate());
-            req.setAttribute("articleMas[2].username", articleMas[2].getUsername());
+            req.setAttribute("articleMas", articleMas);
 
             req.getRequestDispatcher("articles.jsp").forward(req, resp);
 
+            // session
+            HttpSession session = req.getSession();
+            session.setAttribute("sessionLogin", login);
+            session.setAttribute("sessionPassword", password);
+            session.setAttribute("sessionArticleMas", articleMas);
 
         } else {
-            req.setAttribute("message", "Wrong password");
+            req.setAttribute("message", "Wrong user or password");
             req.getRequestDispatcher("index.jsp").forward(req, resp);
         }
 

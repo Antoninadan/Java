@@ -37,6 +37,16 @@
         <url-pattern>/article</url-pattern>
     </servlet-mapping>
 
+    <!--article remove-->
+    <servlet>
+        <servlet-name>articleRemove</servlet-name>
+        <servlet-class>ua.i.mail100.articleRemoveClass</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>articleRemove</servlet-name>
+        <url-pattern>/remove-article</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
