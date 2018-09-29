@@ -1,16 +1,26 @@
 package ua.i.mail100;
 
 public class Article {
+    private int id;
     private String name;
     private String content;
     private String date;
     private String username;
 
-    public Article(String name, String content, String date, String username) {
+    public Article(int id, String name, String content, String date, String username) {
+        this.id = id;
         this.name = name;
         this.content = content;
         this.date = date;
         this.username = username;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

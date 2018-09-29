@@ -22,13 +22,5 @@
     <%= request.getAttribute("message") %>
 <%}%>
 
-<% if (request.getAttribute("sessionLogin") != null) {%>
-    <%= request.getAttribute("sessionLogin") %>
-<%}%>
-
-<% if (request.getAttribute("articleMas") != null) {%>
-    <%= ((Article[]) request.getAttribute("articleMas"))[1].getName() %>
-<%}%>
-
 </body>
 </html>

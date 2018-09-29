@@ -1,4 +1,6 @@
 <%@ page import="ua.i.mail100.Article" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Iterator" %>
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -21,28 +23,34 @@
         <td> Username</td>
     </tr>
 
-    <% for (int i = 0; i < ((Article[]) request.getAttribute("articleMas")).length; i++) { %>
+
+    <% Iterator<Article> itr = ((List<Article>) request.getAttribute("articleMas")).iterator();
+        for (; itr.hasNext(); ) {
+            Article element = itr.next(); %>
     <tr>
-        <td><%= ((Article[]) request.getAttribute("articleMas"))[i].getName() %>
+        <td><%= element.getName() %>
         </td>
-        <td><%= ((Article[]) request.getAttribute("articleMas"))[i].getContent() %>
+        <td><%= element.getContent() %>
         </td>
-        <td><%= ((Article[]) request.getAttribute("articleMas"))[i].getDate() %>
+        <td><%= element.getDate() %>
         </td>
-        <td><%= ((Article[]) request.getAttribute("articleMas"))[i].getUsername() %>
+        <td><%= element.getUsername() %>
         </td>
 
         <td>
             <form action="/remove-article" method="POST">
-                <input type = "hidden" name="removeId" value=<%= i%>>
+                <input type="hidden" name="removeId" value=<%= element.getId()%>>
                 <input type="submit" value="Delete article"/>
             </form>
         </td>
 
     </tr>
-
     <%} %>
 </table>
+
+<% if (request.getAttribute("messageArticleRemove") != null) {%>
+<%= request.getAttribute("messageArticleRemove") %>
+<%}%>
 
 </body>
 </html>
