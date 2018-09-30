@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5114ea33-cf6e-4689-bae1-6faeb4271505" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LessonPRO6_HW_1/.idea/libraries/postgresql_9_1_901_1_jdbc4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LessonPRO6_HW_1/.idea/libraries/servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LessonPRO6_HW_1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson2HW1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2HW1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" afterDir="false" />
@@ -15,6 +12,9 @@
       <change beforePath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LessonPRO6/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LessonPRO6/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,18 +55,19 @@
     <session id="-1732513719">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="424" />
+          <entry key="java" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="424" />
+          <entry key="JAVA" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -90,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="366">
+              <caret line="62" column="9" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="62" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#City#0" />
@@ -158,8 +159,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Article.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -170,9 +171,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="352" />
-    <option name="y" value="12" />
-    <option name="width" value="1508" />
+    <option name="x" value="54" />
+    <option name="width" value="1742" />
     <option name="height" value="1145" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -207,6 +207,11 @@
               <item name="LessonPRO6" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="LessonPRO6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="postgresql-9.1-901-1.jdbc41" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -217,7 +222,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538271918532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538274163811" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson3PRO_HW_1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -263,18 +268,17 @@
       <option name="presentableId" value="Default" />
       <updated>1537981286729</updated>
       <workItem from="1537981293680" duration="3393000" />
-      <workItem from="1538250577337" duration="13523000" />
+      <workItem from="1538250577337" duration="15772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16916000" />
+    <option name="totallyTimeSpent" value="19165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="352" y="12" width="1508" height="1145" extended-state="0" />
-    <editor active="true" />
+    <frame x="54" y="0" width="1742" height="1145" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13881215" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.274673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -283,7 +287,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24035609" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24035609" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="366">
+          <caret line="62" column="9" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="62" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#City#0" />
