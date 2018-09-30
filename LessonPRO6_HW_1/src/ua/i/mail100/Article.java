@@ -74,7 +74,7 @@ public class Article {
                 '}';
     }
 
-    public static void printMas(List<Article> articleMas) {
+    public static void printMas(List<Article> articleMas) throws SQLException {
         Iterator<ua.i.mail100.Article> itr1 = articleMas.iterator();
         for (; itr1.hasNext(); ) {
             Article element = itr1.next();
@@ -91,6 +91,14 @@ public class Article {
                 break;
             }
         }
+
+//        try (Connection c = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
+//            try (PreparedStatement st = c.prepareStatement("delete From city where id = ?")) {
+//                st.setInt(1, removeId);
+//                st.executeUpdate();
+//            }
+//        }
+
         return articleMas;
     }
 
@@ -158,3 +166,18 @@ public class Article {
 
 }
 
+
+
+
+//        CREATE TABLE sys_user(id SERIAL PRIMARY KEY, login varchar(255), pass varchar(255), is_admin boolean)
+//
+//        insert into sys_user(login, pass, is_admin) values('user1', '1', 'true')
+//        insert into sys_user(login, pass, is_admin) values('user2', '2', 'false')
+//        insert into sys_user(login, pass, is_admin) values('user3', '3', 'false')
+//
+//        CREATE TABLE article(id SERIAL PRIMARY KEY, name varchar(255), content varchar(255), date varchar(255), user_id int NOT NULL, FOREIGN KEY (user_id) REFERENCES sys_user(id))
+//
+//        insert into article(name, content, date, user_id) values('ar1', 'content1', '21.12.2017', 1)
+//        insert into article(name, content, date, user_id) values('ar2', 'content2', '11.11.2017', 2)
+//        insert into article(name, content, date, user_id) values('ar3', 'content3', '01.01.2016', 3)
+//        insert into article(name, content, date, user_id) values('ar4', 'content4', '03.03.2018', 3)
