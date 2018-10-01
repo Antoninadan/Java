@@ -52,15 +52,22 @@ class City {
 public class Main {
 
     public static void main(String[] args) throws SQLException {
-//        getCitiesSimple();
+        getCitiesSimple();
 
 //        System.out.println(getCitiesByCountry("Ukraine"));
 
-        Iterator<ua.i.mail100.Article> itr = getArticle().iterator();
-        for (; itr.hasNext(); ) {
-            ua.i.mail100.Article element = itr.next();
-            System.out.println(element.toString());
-        }
+        // Article from DB
+//        try {
+//            Iterator<ua.i.mail100.Article> itr = getArticleDB().iterator();
+//            for (; itr.hasNext(); ) {
+//                ua.i.mail100.Article element = itr.next();
+//                System.out.println(element.toString());
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+
+        deleteCitiesById(4);
 
     }
 
@@ -82,6 +89,20 @@ public class Main {
         }
     }
 
+    // simple example
+    private static void deleteCitiesById(int id) throws SQLException {
+        // add PostgreSQL JDBC Driver
+        // default user = "postgres"
+        // try-catch with resources
+        // Connection -> PreparedStatement -> ResultSet = PreparedStatement.executeQuery()
+
+        try (Connection c = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
+            try (PreparedStatement st = c.prepareStatement("delete From city where id = ?")) {
+                st.setInt(1, id);
+                st.executeUpdate();
+            }
+        }
+    }
 
     // example
     private static List<City> getCitiesByCountry(String countryName) throws SQLException {
@@ -113,9 +134,8 @@ public class Main {
     }
 
 
-    private static List<ua.i.mail100.Article> getArticle() throws SQLException {
+    private static List<ua.i.mail100.Article> getArticleDB() throws SQLException {
         List<ua.i.mail100.Article> articleMas = new ArrayList<>();
-
 
         try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
             try (PreparedStatement st = connection.prepareStatement("select article.*, sys_user.login from article inner join sys_user on article.user_id = sys_user.id")) {
