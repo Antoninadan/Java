@@ -25,31 +25,27 @@ public class articleRemoveClass extends HttpServlet {
 
         // read info
           // get articles from DB
-//        List<Article> articleMas = new ArrayList<>();
-//        try {
-//            articleMas = Article.getArticleDB();
-//        } catch (Exception e) {
-//            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-//        }
-//
-//        // get users from DB
-//        List<User> userMas = new ArrayList<>();
-//        try {
-//            userMas = User.getUserDB();
-//        } catch (Exception e) {
-//            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-//        }
+        List<Article> articleMas = new ArrayList<>();
+        try {
+            articleMas = Article.getArticleDB();
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
+        }
+
+        // get users from DB
+        List<User> userMas = new ArrayList<>();
+        try {
+            userMas = User.getUserDB();
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
+        }
 
         //  TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        List<Article> articleMas = new ArrayList<>();
-        articleMas = Article.getArticleStatic();
-
-        List<User> userMas = new ArrayList<>();
-        userMas = User.getUserStatic();
-
-        // get user is_admin
-
-
+//        List<Article> articleMas = new ArrayList<>();
+//        articleMas = Article.getArticleStatic();
+//
+//        List<User> userMas = new ArrayList<>();
+//        userMas = User.getUserStatic();
 
         // delete from List
 

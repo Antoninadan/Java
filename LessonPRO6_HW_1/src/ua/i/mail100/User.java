@@ -116,10 +116,12 @@ public class User {
         return userMas;
     }
 
-    public static List<User> getUserDB() throws SQLException {
+    public static List<User> getUserDB(){
         List<User> userMas = new ArrayList<>();
 
-        try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta");
             try (PreparedStatement st = connection.prepareStatement("select * from sys_user")) {
 
                 try (ResultSet set = st.executeQuery()) {
@@ -133,6 +135,8 @@ public class User {
                     }
                 }
             }
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
         }
         return userMas;
     }

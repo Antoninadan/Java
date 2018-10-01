@@ -74,7 +74,7 @@ public class Article {
                 '}';
     }
 
-    public static void printMas(List<Article> articleMas) throws SQLException {
+    public static void printMas(List<Article> articleMas) {
         Iterator<ua.i.mail100.Article> itr1 = articleMas.iterator();
         for (; itr1.hasNext(); ) {
             Article element = itr1.next();
@@ -91,14 +91,7 @@ public class Article {
                 break;
             }
         }
-
-//        try (Connection c = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
-//            try (PreparedStatement st = c.prepareStatement("delete From city where id = ?")) {
-//                st.setInt(1, removeId);
-//                st.executeUpdate();
-//            }
-//        }
-
+        deleteArticleDB(removeId);
         return articleMas;
     }
 
@@ -108,7 +101,7 @@ public class Article {
         Iterator<Article> itr1 = articleMas.iterator();
         for (; itr1.hasNext(); ) {
             Article element = itr1.next();
-            if ((element.getId() == removeId) && ((User.isUserAdmin(userMas, login)) || (login.equals(element.getUsername()))) ) {
+            if ((element.getId() == removeId) && ((User.isUserAdmin(userMas, login)) || (login.equals(element.getUsername())))) {
                 result = true;
                 break;
             }
@@ -142,10 +135,12 @@ public class Article {
         return articleMas;
     }
 
-    public static List<Article> getArticleDB() throws SQLException {
+    public static List<Article> getArticleDB() {
         List<Article> articleMas = new ArrayList<>();
 
-        try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta")) {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta");
             try (PreparedStatement st = connection.prepareStatement("select article.*, sys_user.login from article inner join sys_user on article.user_id = sys_user.id")) {
 
                 try (ResultSet set = st.executeQuery()) {
@@ -160,13 +155,26 @@ public class Article {
                     }
                 }
             }
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
         }
         return articleMas;
     }
 
+    public static void deleteArticleDB(int removeId) {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta");
+            try (PreparedStatement st = connection.prepareStatement("delete From city where id = ?")) {
+                st.setInt(1, removeId);
+                st.executeUpdate();
+            }
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
+        }
+    }
+
 }
-
-
 
 
 //        CREATE TABLE sys_user(id SERIAL PRIMARY KEY, login varchar(255), pass varchar(255), is_admin boolean)

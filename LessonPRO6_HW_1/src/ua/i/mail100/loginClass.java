@@ -17,27 +17,33 @@ public class loginClass extends HttpServlet {
         String password = req.getParameter("password");
 
 //        // get articles from DB
-//        List<Article> articleMas = new ArrayList<>();
-//        try {
-//            articleMas = Article.getArticleDB();
-//        } catch (Exception e) {
-//            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-//        }
-//
-//        // get users from DB
-//        List<User> userMas = new ArrayList<>();
-//        try {
-//            userMas = User.getUserDB();
-//        } catch (Exception e) {
-//            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-//        }
+        List<Article> articleMas = new ArrayList<>();
+        try {
+            articleMas = Article.getArticleDB();
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
+        }
+
+        // get users from DB
+        List<User> userMas = new ArrayList<>();
+        try {
+            userMas = User.getUserDB();
+        } catch (Exception e) {
+            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
+        }
+
+        // to be deleted
+        User.printMas(userMas);
+        Article.printMas(articleMas);
+
+
 
         //  TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        List<Article> articleMas = new ArrayList<>();
-        articleMas = Article.getArticleStatic();
-
-        List<User> userMas = new ArrayList<>();
-        userMas = User.getUserStatic();
+//        List<Article> articleMas = new ArrayList<>();
+//        articleMas = Article.getArticleStatic();
+//
+//        List<User> userMas = new ArrayList<>();
+//        userMas = User.getUserStatic();
 
 
         // check password
@@ -49,7 +55,6 @@ public class loginClass extends HttpServlet {
             HttpSession session = req.getSession();
             session.setAttribute("sessionLogin", login);
             session.setAttribute("sessionPassword", password);
-            // session.setAttribute("sessionConnection", connection);
 
             req.getRequestDispatcher("articles.jsp").forward(req, resp);
 
