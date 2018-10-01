@@ -22,21 +22,9 @@
       <change beforePath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9Homework1/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO4_HW_1/src/MyAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LessonPRO6/.idea/libraries/postgresql_9_1_901_1_jdbc4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO6/.idea/libraries/postgresql_9_1_901_1_jdbc4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonPRO6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LessonPRO6/out/production/LessonPRO6/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO6/out/production/LessonPRO6/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LessonPRO6/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonPRO6/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_9_1_901_1_jdbc41.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LessonPRO6_HW_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LessonPRO6_HW_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/articleRemoveClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/articleRemoveClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/loginClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LessonPRO6_HW_1_war_exploded/WEB-INF/classes/ua/i/mail100/loginClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/articleRemoveClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/articleRemoveClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/loginClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LessonPRO6_HW_1/ua/i/mail100/loginClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ua/i/mail100/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/i/mail100/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ua/i/mail100/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/i/mail100/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" afterDir="false" />
     </list>
@@ -51,10 +39,10 @@
     <session id="-2018895992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,14 +61,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1827" />
+          <entry key="java" value="1940" />
           <entry key="jsp" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1827" />
+          <entry key="JAVA" value="1940" />
           <entry key="JSP" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -96,9 +84,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/Article.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="84" column="87" lean-forward="true" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
+                <element signature="e#0#7059#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -108,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="1105">
               <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="128">
+              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/loginClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="289">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -215,9 +204,9 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/ua/i/mail100/mainClass.java" />
         <option value="$PROJECT_DIR$/web/articles.jsp" />
-        <option value="$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java" />
-        <option value="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" />
         <option value="$PROJECT_DIR$/src/ua/i/mail100/User.java" />
+        <option value="$PROJECT_DIR$/src/ua/i/mail100/loginClass.java" />
+        <option value="$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java" />
         <option value="$PROJECT_DIR$/src/ua/i/mail100/Article.java" />
       </list>
     </option>
@@ -237,9 +226,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1956" />
-    <option name="y" value="52" />
+    <option name="y" value="18" />
     <option name="width" value="1735" />
-    <option name="height" value="1026" />
+    <option name="height" value="1153" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -249,7 +238,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,15 +278,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538322423604" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../postgresql-9.1-901-1.jdbc4.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -400,18 +389,19 @@
       <workItem from="1538269098058" duration="5051000" />
       <workItem from="1538313737213" duration="9132000" />
       <workItem from="1538331575149" duration="1834000" />
-      <workItem from="1538360883693" duration="2680000" />
+      <workItem from="1538360883693" duration="3905000" />
+      <workItem from="1538423390565" duration="2094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18697000" />
+    <option name="totallyTimeSpent" value="22016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1956" y="52" width="1735" height="1026" extended-state="0" />
+    <frame x="1956" y="18" width="1735" height="1153" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23761193" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2035821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,7 +411,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3105381" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31010795" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,16 +474,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/mainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -525,20 +505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/mainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/loginClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="578">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -547,7 +517,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
+        <state relative-caret-position="1105">
           <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -557,11 +527,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/articleRemoveClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/loginClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/i/mail100/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="84" column="87" lean-forward="true" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
+            <element signature="e#0#7059#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

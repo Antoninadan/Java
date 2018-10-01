@@ -1,3 +1,17 @@
+//        Test DB data:
+//        CREATE TABLE sys_user(id SERIAL PRIMARY KEY, login varchar(255), pass varchar(255), is_admin boolean)
+//
+//        insert into sys_user(login, pass, is_admin) values('user1', '1', 'true')
+//        insert into sys_user(login, pass, is_admin) values('user2', '2', 'false')
+//        insert into sys_user(login, pass, is_admin) values('user3', '3', 'false')
+//
+//        CREATE TABLE article(id SERIAL PRIMARY KEY, name varchar(255), content varchar(255), date varchar(255), user_id int NOT NULL, FOREIGN KEY (user_id) REFERENCES sys_user(id))
+//
+//        insert into article(name, content, date, user_id) values('ar1', 'content1', '21.12.2017', 1)
+//        insert into article(name, content, date, user_id) values('ar2', 'content2', '11.11.2017', 2)
+//        insert into article(name, content, date, user_id) values('ar3', 'content3', '01.01.2016', 3)
+//        insert into article(name, content, date, user_id) values('ar4', 'content4', '03.03.2018', 3)
+
 package ua.i.mail100;
 
 import java.sql.*;
@@ -109,7 +123,6 @@ public class Article {
         return result;
     }
 
-
     // static variant FOR TEST!!! need to be deleted!!!!!!!!!!!!!
     public static List<Article> getArticleStatic() {
         String content1 = "Mercedes driver Lewis Hamilton produced one of the best laps of his career to take a surprise pole position for the Singapore Grand Prix.";
@@ -121,8 +134,8 @@ public class Article {
         Article articleMas0 = new Article(1, "Hamilton takes stunning pole in Singapore", content1, "12.12.2017", "user1");
         Article articleMas1 = new Article(2, "The cities than make living easy", content2, "12.12.2017", "user2");
         Article articleMas2 = new Article(3, "6 of the weirdest albums released by Hollywood stars", content3, "12.12.2017", "user3");
-        Article articleMas3 = new Article(4, "dgfhgdfhdf", content3, "12.01.2018", "user3");
-        Article articleMas4 = new Article(5, "fghf", content3, "11.09.2018", "user3");
+        Article articleMas3 = new Article(4, "dgfhgdfhdf", content4, "12.01.2018", "user3");
+        Article articleMas4 = new Article(5, "fghf", content5, "11.09.2018", "user3");
 
         // set ArrayList
         List<Article> articleMas = new ArrayList<>();
@@ -165,7 +178,7 @@ public class Article {
         try {
             Class.forName("org.postgresql.Driver");
             Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "postgres", "estafeta");
-            try (PreparedStatement st = connection.prepareStatement("delete From city where id = ?")) {
+            try (PreparedStatement st = connection.prepareStatement("delete From article where id = ?")) {
                 st.setInt(1, removeId);
                 st.executeUpdate();
             }
@@ -177,15 +190,4 @@ public class Article {
 }
 
 
-//        CREATE TABLE sys_user(id SERIAL PRIMARY KEY, login varchar(255), pass varchar(255), is_admin boolean)
-//
-//        insert into sys_user(login, pass, is_admin) values('user1', '1', 'true')
-//        insert into sys_user(login, pass, is_admin) values('user2', '2', 'false')
-//        insert into sys_user(login, pass, is_admin) values('user3', '3', 'false')
-//
-//        CREATE TABLE article(id SERIAL PRIMARY KEY, name varchar(255), content varchar(255), date varchar(255), user_id int NOT NULL, FOREIGN KEY (user_id) REFERENCES sys_user(id))
-//
-//        insert into article(name, content, date, user_id) values('ar1', 'content1', '21.12.2017', 1)
-//        insert into article(name, content, date, user_id) values('ar2', 'content2', '11.11.2017', 2)
-//        insert into article(name, content, date, user_id) values('ar3', 'content3', '01.01.2016', 3)
-//        insert into article(name, content, date, user_id) values('ar4', 'content4', '03.03.2018', 3)
+

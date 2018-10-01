@@ -18,25 +18,11 @@ public class loginClass extends HttpServlet {
 
 //        // get articles from DB
         List<Article> articleMas = new ArrayList<>();
-        try {
-            articleMas = Article.getArticleDB();
-        } catch (Exception e) {
-            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-        }
+        articleMas = Article.getArticleDB();
 
         // get users from DB
         List<User> userMas = new ArrayList<>();
-        try {
-            userMas = User.getUserDB();
-        } catch (Exception e) {
-            System.out.println("Failed to create JDBC db connection " + e.toString() + e.getMessage());
-        }
-
-        // to be deleted
-        User.printMas(userMas);
-        Article.printMas(articleMas);
-
-
+        userMas = User.getUserDB();
 
         //  TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //        List<Article> articleMas = new ArrayList<>();
