@@ -91,7 +91,6 @@ public class Article {
                 break;
             }
         }
-        deleteArticleDB(removeId);
         return articleMas;
     }
 

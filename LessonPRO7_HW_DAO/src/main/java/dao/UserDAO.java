@@ -1,6 +1,6 @@
 package dao;
 
-import model.Article;
+import interfaces.UserInterface;
 import model.User;
 
 import java.io.Serializable;
@@ -17,7 +17,7 @@ public class UserDAO implements UserInterface {
     static final String CONNECTION_URL = "jdbc:postgresql://localhost/postgres";
     static final String CONNECTION_USER = "postgres";
     static final String CONNECTION_PASSWORD = "estafeta";
-    static final String CONNECTION_SQL_GET_ALL = "select * from user";
+    static final String CONNECTION_SQL_GET_ALL = "select * from sys_user";
 
     @Override
     public List<User> getAll() {

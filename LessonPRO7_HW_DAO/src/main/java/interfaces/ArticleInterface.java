@@ -3,11 +3,11 @@ package interfaces;
 import model.Article;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ArticleInterface extends DAOInterface {
     @Override
-    ArrayList<Article> getAll();
+    List<Article> getAll();
 
     @Override
     void deleteById(Serializable id);

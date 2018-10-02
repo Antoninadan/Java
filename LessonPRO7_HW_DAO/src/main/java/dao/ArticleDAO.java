@@ -1,7 +1,6 @@
 package dao;
 
 import interfaces.ArticleInterface;
-import interfaces.DAOInterface;
 import model.Article;
 
 import java.io.Serializable;
@@ -12,9 +11,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserInterface implements DAOInterface {
-
-
+public class ArticleDAO implements ArticleInterface {
     static final String CONNECTION_DRIVER = "org.postgresql.Driver";
     static final String CONNECTION_URL = "jdbc:postgresql://localhost/postgres";
     static final String CONNECTION_USER = "postgres";
@@ -49,14 +46,13 @@ public class UserInterface implements DAOInterface {
         return articleMas;
     }
 
-
     @Override
     public void deleteById(Serializable id) {
         try {
             Class.forName(CONNECTION_DRIVER);
             Connection connection = DriverManager.getConnection(CONNECTION_URL, CONNECTION_USER, CONNECTION_PASSWORD);
             try (PreparedStatement st = connection.prepareStatement(CONNECTION_SQL_DELETE_BY_ID)) {
-                st.setInt(1, id);
+                st.setInt(1, (int)id);
                 st.executeUpdate();
             }
         } catch (Exception e) {

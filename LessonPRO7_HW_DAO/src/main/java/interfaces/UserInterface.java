@@ -1,8 +1,10 @@
 package interfaces;
 
-import java.util.ArrayList;
+import model.User;
+
+import java.util.List;
 
 public interface UserInterface extends DAOInterface{
     @Override
-    ArrayList<?> getAll();
+    List<User> getAll();
 }
