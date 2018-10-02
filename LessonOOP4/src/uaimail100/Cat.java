@@ -17,9 +17,6 @@ public class Cat implements Play, Comparable {
 	}
 
 
-
-
-
 	@Override
 	public String toString() {
 		return "Cat [name=" + name + ", age=" + age + "]";

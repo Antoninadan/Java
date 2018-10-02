@@ -20,7 +20,7 @@ public class Baby {
 		return "Baby [name=" + name + ", age=" + age + "]";
 	}
 	
-	public String playWith(Play someThing) {
+	public String playWith(Play someThing) {   // переменная типа Interface
 		String result = "I want to play" + someThing;
 		
 		if (!someThing.canPlay()) {
