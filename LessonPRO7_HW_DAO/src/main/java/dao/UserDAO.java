@@ -1,7 +1,7 @@
 package dao;
 
 import interfaces.UserInterface;
-import model.User;
+import models.User;
 
 import java.io.Serializable;
 import java.sql.Connection;

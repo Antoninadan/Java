@@ -1,7 +1,7 @@
 package dao;
 
 import interfaces.ArticleInterface;
-import model.Article;
+import models.Article;
 
 import java.io.Serializable;
 import java.sql.Connection;

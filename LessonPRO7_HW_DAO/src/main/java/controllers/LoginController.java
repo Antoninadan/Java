@@ -1,10 +1,11 @@
-package service;
+package controllers;
 
 import dao.ArticleDAO;
 import dao.UserDAO;
-import interfaces.ArticleInterface;
-import model.Article;
-import model.User;
+import models.Article;
+import models.User;
+import services.ArticleService;
+import services.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,18 +13,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class LoginService extends HttpServlet {
+public class LoginController extends HttpServlet {
 
     private ArticleDAO articleDAO = new ArticleDAO();
-    private ArticleService  articleService = new ArticleService(articleDAO);
+    private ArticleService articleService = new ArticleService(articleDAO);
     private List<Article> articleMas = articleService.getAll();
 
     private UserDAO userDAO = new UserDAO();
-    private UserService  userService = new UserService(userDAO);
+    private UserService userService = new UserService(userDAO);
     private List<User> userMas = userService.getAll();
 
 

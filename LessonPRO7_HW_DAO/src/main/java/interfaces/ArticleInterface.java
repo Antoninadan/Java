@@ -1,6 +1,6 @@
 package interfaces;
 
-import model.Article;
+import models.Article;
 
 import java.io.Serializable;
 import java.util.List;

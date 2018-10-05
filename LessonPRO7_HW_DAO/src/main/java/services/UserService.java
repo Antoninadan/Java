@@ -1,7 +1,7 @@
-package service;
+package services;
 
 import interfaces.UserInterface;
-import model.User;
+import models.User;
 
 import java.util.List;
 

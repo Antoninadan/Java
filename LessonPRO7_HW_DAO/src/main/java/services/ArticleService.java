@@ -1,8 +1,7 @@
-package service;
+package services;
 
-import dao.ArticleDAO;
 import interfaces.ArticleInterface;
-import model.Article;
+import models.Article;
 
 import java.util.List;
 
