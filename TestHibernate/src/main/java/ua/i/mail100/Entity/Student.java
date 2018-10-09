@@ -3,6 +3,7 @@ package ua.i.mail100.Entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Student {
@@ -11,6 +12,9 @@ public class Student {
     @GeneratedValue
     private Long id;
     private String name;
+
+    @ManyToOne
+    private ClassRoom classRoom;
 
     public Student() {
     }
@@ -38,6 +42,14 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public ClassRoom getClassRoom() {
+        return classRoom;
+    }
+
+    public void setClassRoom(ClassRoom classRoom) {
+        this.classRoom = classRoom;
     }
 
     @Override
