@@ -1,0 +1,13 @@
+services\ArticleService.class
+services\UserService.class
+models\Article.class
+models\User.class
+App.class
+controllers\ArticleRemoveController.class
+dao\ArticleDAO.class
+interfaces\UserInterface.class
+controllers\LoginController.class
+interfaces\ArticleInterface.class
+controllers\StartController.class
+dao\UserDAO.class
+interfaces\DAOInterface.class
