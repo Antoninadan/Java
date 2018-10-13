@@ -132,9 +132,13 @@ public class Article {
         return articleMas;
     }
 
-
-
 }
+
+//    insert into article (name, content, date, user_id) values('article 1', 'content1', '12.12.2018', 1)
+//        insert into article (name, content, date, user_id) values('article 2', 'content2', '12.12.2018', 2)
+//        insert into article (name, content, date, user_id) values('article 3', 'content3', '12.12.2018', 3)
+//        insert into article (name, content, date, user_id) values('article 4', 'content4', '12.12.2018', 1)
+//        insert into article (name, content, date, user_id) values('article 5', 'content5', '12.12.2018', 2)
 
 
 
