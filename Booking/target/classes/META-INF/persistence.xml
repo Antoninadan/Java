@@ -10,7 +10,7 @@
             <property name="hibernate.connection.username" value="postgres" />
             <property name="hibernate.connection.password" value="estafeta" />
             <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.hbm2ddl.auto" value="create" />      <!--if without this parameter, then table will not be dropped-->
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />      &lt;!&ndash;if without this parameter, then table will not be dropped&ndash;&gt;-->
 
         </properties>
     </persistence-unit>

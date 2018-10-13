@@ -6,6 +6,5 @@ import java.util.List;
 public interface DAOInterface {
 
     List<?> getAll();
-    void deleteById (Serializable id);
 
 }

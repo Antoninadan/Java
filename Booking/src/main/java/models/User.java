@@ -1,23 +1,39 @@
 package models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+@Entity
+@Table(name = "user_sys")
 public class User {
+
+    @Id
+    @GeneratedValue
     private int id;
     private String login;
-    private String pass;
-    private boolean isAdmin;
+    private String password;
+    private int status; // 0 - not approved, 1 - approved
 
     public User() {
     }
 
-    public User(int id, String login, String pass, boolean isAdmin) {
+    public User(int id, String login, String password, int status) {
         this.id = id;
         this.login = login;
-        this.pass = pass;
-        this.isAdmin = isAdmin;
+        this.password = password;
+        this.status = status;
+    }
+
+
+    public User(String login, String password, int status) {
+        this.login = login;
+        this.password = password;
+        this.status = status;
     }
 
     public int getId() {
@@ -36,20 +52,20 @@ public class User {
         this.login = login;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String pass) {
+        this.password = pass;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
+    public int getStatus() {
+        return status;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     @Override
@@ -57,11 +73,10 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", login='" + login + '\'' +
-                ", pass='" + pass + '\'' +
-                ", isAdmin=" + isAdmin +
+                ", pass='" + password + '\'' +
+                ", status=" + status +
                 '}';
     }
-
 
     public static void printMas(List<User> userMas) {
         Iterator<User> itr1 = userMas.iterator();
@@ -77,7 +92,7 @@ public class User {
         Iterator<User> itr1 = userMas.iterator();
         for (; itr1.hasNext(); ) {
             User element = itr1.next();
-            if ((element.getLogin().equals(login)) && (element.getPass().equals(password))) {
+            if ((element.getLogin().equals(login)) && (element.getPassword().equals(password)) && (element.getStatus() == 1)) {
                 result = true;
                 break;
             }
@@ -85,26 +100,13 @@ public class User {
         return result;
     }
 
-    public static boolean isUserAdmin(List<User> userMas, String login) {
-        boolean result = false;
-
-        Iterator<User> itr1 = userMas.iterator();
-        for (; itr1.hasNext(); ) {
-            User element = itr1.next();
-            if (element.getLogin().equals(login) && (element.isAdmin() == true)) {
-                result = true;
-                break;
-            }
-        }
-        return result;
-    }
 
     // static variant FOR TEST!!! need to be deleted!!!!!!!!!!!!!
     public static List<User> getUserStatic() {
 
-        User user1 = new User(1, "user1", "1", true);
-        User user2 = new User(2, "user2", "2", false);
-        User user3 = new User(3, "user3", "3", false);
+        User user1 = new User(1, "user1", "1", 0);
+        User user2 = new User(2, "user2", "2", 1);
+        User user3 = new User(3, "user3", "3", 1);
 
         // set ArrayList
         List<User> userMas = new ArrayList<>();
