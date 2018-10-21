@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byType">
+    <bean id="Jack"
+          class="com.example.contexspringhw.LorryDriver"
+          p:name = "Jack"
+          p:age = "37"
+          p:education = "higher" />
+    <bean id="Jessy"
+          class="com.example.contexspringhw.CarDriver"
+          p:name = "Jessy"
+          p:age = "32"
+          p:education = "higher" />
+    <bean id="Robert"
+          class="com.example.contexspringhw.ShipDriver"
+          p:name = "Robert"
+          p:age = "43"
+          p:education = "higher" />
+    <bean id="Mercedes Actros"
+          class="com.example.contexspringhw.Lorry"
+          p:loadCapacity = "5.5" />
+    <bean id="Honda Civic"
+          class="com.example.contexspringhw.Car"
+          p:type = "sedan" />
+    <bean id="BMW 530"
+          class="com.example.contexspringhw.Car"
+          p:type = "sedan" />
+    <bean id="Black Pearly"
+          class="com.example.contexspringhw.Ship"
+          p:displacement = "20000" />
+</beans>
