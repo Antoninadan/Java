@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create </title>
+</head>
+<body>
+
+<form action="/auto-create" method="POST">
+    autoName: <input type="text" name="autoName">
+    autoEngineSize: <input type="text" name="autoEngineSize">
+    autoManufactor:
+
+    <!--<select th:field="*{manufactor}">-->
+        <!--&lt;!&ndash;class="form-control" name="example" id="example">&ndash;&gt;-->
+        <!--<option th:each="manufactor : ${allManufactor}"-->
+                <!--th:value="${manufactor.id}"-->
+                <!--th:text="${manufactor.name}">-->
+        <!--</option>-->
+
+
+        <select>
+            <option th:each="manufactor : ${allManufactor}"
+                    th:value="${manufactor.id}"
+                    th:text="${manufactor.name}" />
+        </select>
+
+    </select>
+
+
+
+
+    <input type="submit" value="Create"/>
+</form>
+
+</body>
+</html>
+
+
+<!--<div class="controls">-->
+
+<!--</div>-->
