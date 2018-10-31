@@ -16,10 +16,10 @@ import java.util.List;
 public class AutoController {
     private AutoRepository autoRepository;
 
-    @ModelAttribute("allAuto")
-    public List<Auto> populateAutos() {
-        return this.autoRepository.findAll();
-    }
+//    @ModelAttribute("allAuto")
+//    public List<Auto> populateAutos() {
+//        return this.autoRepository.findAll();
+//    }
 
     @Autowired
     public AutoController(AutoRepository autoRepository) {
@@ -46,11 +46,13 @@ public class AutoController {
         return autoRepository.save(auto) != null;
     }
 
-    @RequestMapping(value = "/auto-list", method = RequestMethod.GET)
-    public ModelAndView showAutoList(ModelAndView modelAndView) {
-        modelAndView.setViewName("auto_list");
-        return modelAndView;
-    }
+//    @RequestMapping(value = "/auto-list", method = RequestMethod.GET)
+//    public ModelAndView showAutoList(ModelAndView modelAndView) {
+//        modelAndView.setViewName("auto_list");
+//        List<Auto> allAuto = autoRepository.findAll();
+//        modelAndView.addObject("allAuto", allAuto);
+//        return modelAndView;
+//    }
 
 //    public List<Auto> findAll() {
 //

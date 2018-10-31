@@ -21,8 +21,8 @@ public class ManufactorController {
 
     @ModelAttribute("allManufactor")
     public List<Manufactor> allUsers() {
-        Manufactor manufactor1 = new Manufactor("Toyota");
-        Manufactor manufactor2 = new Manufactor("Mercedes");
+//        Manufactor manufactor1 = new Manufactor("Toyota");
+//        Manufactor manufactor2 = new Manufactor("Mercedes");
 
         List<Manufactor> manufactorList= manufactorRepository.findAll();
         System.out.println(manufactorList);

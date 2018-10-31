@@ -44,3 +44,9 @@ public class Auto {
         this.manufactor = manufactor;
     }
 }
+
+
+//    insert into manufactor VALUES (1, 'Volvo')
+//    insert into auto VALUES (1, 2, 'X5', 1)
+//    select * from auto
+//            select * from manufactor

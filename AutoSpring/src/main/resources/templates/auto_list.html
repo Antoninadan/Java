@@ -6,27 +6,35 @@
 </head>
 <body>
 
-<h2 th:text="#{title.list}">List of Autos</h2>
+List of Autos
 
 
-<table>
-    <thead>
-    <tr>
-        <th th:text="#{auto.mark}">m</th>
-        <th th:text="#{auto.engineSize}">1</th>
-        <!--<th th:text="#{seedstarter.type}">Type</th>-->
-        <!--<th th:text="#{seedstarter.features}">Features</th>-->
-        <!--<th th:text="#{seedstarter.rows}">Rows</th>-->
+<!--<table>-->
+    <!--<thead>-->
+    <!--<tr>-->
+        <!--<th th:text="cdvf"></th>-->
+        <!--<th th:text="dsf"></th>-->
+        <!--&lt;!&ndash;<th th:text="#{seedstarter.type}">Type</th>&ndash;&gt;-->
+        <!--&lt;!&ndash;<th th:text="#{seedstarter.features}">Features</th>&ndash;&gt;-->
+        <!--&lt;!&ndash;<th th:text="#{seedstarter.rows}">Rows</th>&ndash;&gt;-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr th:each="sb : ${allAuto}">-->
+        <!--&lt;!&ndash;<td th:text="${{auto.mark}}">13/01/2011</td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td th:text="#{{auto.engineSize}}">yes</td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td th:text="#{|seedstarter.type.${sb.type}|}">Wireframe</td>&ndash;&gt;-->
+    <!--</tr>-->
+    <!--</tbody>-->
+
+<table border="1">
+    <tr th:each="auto : ${allAuto}">
+        <td th:text="${auto.id}"></td>
+        <td th:text="${auto.mark}"></td>
+        <td th:text="${auto.engineSize}"></td>
     </tr>
-    </thead>
-    <tbody>
-    <tr th:each="sb : ${allAuto}">
-        <td th:text="${{auto.mark}}">13/01/2011</td>
-        <td th:text="#{{auto.engineSize}}">yes</td>
-        <!--<td th:text="#{|seedstarter.type.${sb.type}|}">Wireframe</td>-->
-    </tr>
-    </tbody>
 </table>
+
 
 </body>
 </html>
