@@ -1,9 +1,6 @@
 package com.example.autospring.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Auto {
@@ -15,9 +12,21 @@ public class Auto {
     private Integer engineSize;
 
     @ManyToOne
+    @JoinColumn(name = "manufactor_id")
     private Manufactor manufactor;
 
     public Auto() {
+    }
+
+    public Auto(String mark, Integer engineSize) {
+        this.mark = mark;
+        this.engineSize = engineSize;
+    }
+
+    public Auto(String mark, Integer engineSize, Manufactor manufactor) {
+        this.mark = mark;
+        this.engineSize = engineSize;
+        this.manufactor = manufactor;
     }
 
     public String getMark() {
@@ -42,6 +51,16 @@ public class Auto {
 
     public void setManufactor(Manufactor manufactor) {
         this.manufactor = manufactor;
+    }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "id=" + id +
+                ", mark='" + mark + '\'' +
+                ", engineSize=" + engineSize +
+                ", manufactor=" + manufactor +
+                '}';
     }
 }
 

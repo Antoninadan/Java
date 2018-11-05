@@ -7,43 +7,24 @@
 <body>
 
 <form action="/auto-create" method="POST">
+
     autoName: <input type="text" name="autoName">
+
     autoEngineSize: <input type="text" name="autoEngineSize">
+
     autoManufactor:
-
-    <!--<select th:field="*{manufactor}">-->
-        <!--&lt;!&ndash;class="form-control" name="example" id="example">&ndash;&gt;-->
-        <!--<option th:each="manufactor : ${allManufactor}"-->
-                <!--th:value="${manufactor.id}"-->
-                <!--th:text="${manufactor.name}">-->
-        <!--</option>-->
-
-
-    <!--<select>-->
-        <!--<option th:each="dropDownItem : ${dropDownItems}"-->
-                <!--th:value="${dropDownItem.value}"-->
-                <!--th:text="${dropDownItem.key}" />-->
-    <!--</select>-->
-
-
-        <!--<select>-->
-            <!--<option th:each="manufactor : ${allManufactor}"-->
-                    <!--th:value="${manufactor.id}"-->
-                    <!--th:text="${manufactor.name}" />-->
-        <!--</select>-->
-
-    <!--</select>-->
-
-
-
+    <select name="manufacturerName" id="manufacturerName">
+        <option disabled selected>Select</option>
+        <option th:each="manufacturer: ${allManufactor}"
+                th:value="${manufacturer.name}"
+                th:utext="${manufacturer.name}"></option>
+    </select>
 
     <input type="submit" value="Create"/>
 </form>
 
+<a href="/auto-list">List of Autos</a>
+
 </body>
 </html>
 
-
-<!--<div class="controls">-->
-
-<!--</div>-->

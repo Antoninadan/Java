@@ -1,9 +1,11 @@
 package com.example.autospring.controllers;
 
 import com.example.autospring.entities.Auto;
+import com.example.autospring.entities.Manufactor;
 import com.example.autospring.repository.AutoRepository;
+import com.example.autospring.repository.ManufactorRepository;
+import com.sun.deploy.net.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,49 +16,57 @@ import java.util.List;
 
 @RestController
 public class AutoController {
-    private AutoRepository autoRepository;
 
-//    @ModelAttribute("allAuto")
-//    public List<Auto> populateAutos() {
-//        return this.autoRepository.findAll();
-//    }
+    private AutoRepository autoRepository;
+    private ManufactorRepository manufactorRepository;
 
     @Autowired
-    public AutoController(AutoRepository autoRepository) {
+    public AutoController(AutoRepository autoRepository, ManufactorRepository manufactorRepository) {
+
         this.autoRepository = autoRepository;
+        this.manufactorRepository = manufactorRepository;
     }
 
     @RequestMapping(value = "/auto-create", method = RequestMethod.GET)
     public ModelAndView showAutoCreate(ModelAndView modelAndView) {
+        modelAndView.addObject("allManufactor", manufactorRepository.findAll());
         modelAndView.setViewName("auto_create");
         return modelAndView;
     }
 
+
     @RequestMapping(value = "/auto-create", method = RequestMethod.POST)
-    public boolean create(HttpServletRequest request) {
+    public ModelAndView create(ModelAndView modelAndView, HttpServletRequest request, HttpResponse response) {
 
         String autoName = request.getParameter("autoName");
         Integer autoEngineSize = Integer.parseInt(request.getParameter("autoEngineSize"));
+        String autoManufactorName = request.getParameter("manufacturerName");
 
-        Auto auto = new Auto();
+        List<Manufactor> autoManufactorList = manufactorRepository.findByName(autoManufactorName);
+        Manufactor autoManufactor = autoManufactorList.get(autoManufactorList.size()-1);
 
-        auto.setMark(autoName);
-        auto.setEngineSize(autoEngineSize);
+        Auto auto = new Auto(autoName, autoEngineSize, autoManufactor);
+        autoRepository.save(auto);
 
-        return autoRepository.save(auto) != null;
+        return   showAllAuto(modelAndView);
     }
 
+
+    // witout paginator
+    @RequestMapping(value = "/auto-list", method = RequestMethod.GET)
+    public ModelAndView showAllAuto(ModelAndView modelAndView) {
+        modelAndView.setViewName("auto_list");
+        modelAndView.addObject("allAuto", autoRepository.findAll());
+
+        return modelAndView;
+    }
+
+
+
+//    // paginator
 //    @RequestMapping(value = "/auto-list", method = RequestMethod.GET)
-//    public ModelAndView showAutoList(ModelAndView modelAndView) {
-//        modelAndView.setViewName("auto_list");
-//        List<Auto> allAuto = autoRepository.findAll();
-//        modelAndView.addObject("allAuto", allAuto);
-//        return modelAndView;
+//    public Page<Auto> findAll(ModelAndView modelAndView) {
+//        modelAndView.addObject("allAuto", autoRepository.findAll());
+//        return autoRepository.findAll(PageRequest.of(0, 4));
 //    }
-
-//    public List<Auto> findAll() {
-//
-//        return autoRepository.findAll();
-//    }
-
 }

@@ -8,33 +8,21 @@
 
 List of Autos
 
-
-<!--<table>-->
-    <!--<thead>-->
-    <!--<tr>-->
-        <!--<th th:text="cdvf"></th>-->
-        <!--<th th:text="dsf"></th>-->
-        <!--&lt;!&ndash;<th th:text="#{seedstarter.type}">Type</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th th:text="#{seedstarter.features}">Features</th>&ndash;&gt;-->
-        <!--&lt;!&ndash;<th th:text="#{seedstarter.rows}">Rows</th>&ndash;&gt;-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tbody>-->
-    <!--<tr th:each="sb : ${allAuto}">-->
-        <!--&lt;!&ndash;<td th:text="${{auto.mark}}">13/01/2011</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td th:text="#{{auto.engineSize}}">yes</td>&ndash;&gt;-->
-        <!--&lt;!&ndash;<td th:text="#{|seedstarter.type.${sb.type}|}">Wireframe</td>&ndash;&gt;-->
-    <!--</tr>-->
-    <!--</tbody>-->
-
 <table border="1">
+    <tr>
+        <th>Mark</th>
+        <th>Engine size</th>
+        <th>Manufactor</th>
+    </tr>
     <tr th:each="auto : ${allAuto}">
-        <td th:text="${auto.id}"></td>
+        <!--<td th:text="${auto.id}"></td>-->
         <td th:text="${auto.mark}"></td>
         <td th:text="${auto.engineSize}"></td>
+        <td th:text="${auto.manufactor.name}"></td>
     </tr>
 </table>
 
+<a href="/auto-create">Create</a>
 
 </body>
 </html>

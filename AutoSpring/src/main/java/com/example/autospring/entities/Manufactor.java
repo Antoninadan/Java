@@ -12,6 +12,9 @@ public class Manufactor {
 
     private String name;
 
+    public Manufactor() {
+    }
+
     public Manufactor(String name) {
         this.name = name;
     }
@@ -22,5 +25,13 @@ public class Manufactor {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Manufactor{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manufactor list</title>
+</head>
+<body>
+
+List of Manufactor
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr th:each="manufactor : ${allManufactor}">
+        <!--<td th:text="${auto.id}"></td>-->
+        <td th:text="${manufactor.name}"></td>
+    </tr>
+</table>
+
+
+<select name="manufacturName" id="manufacturerName">
+    <option disabled selected>Select</option>
+    <option th:each="manufacturer: ${allManufactor}"
+            th:value="${manufacturer.name}"
+            th:utext="${manufacturer.name}"></option>
+</select>
+
+
+
+</body>
+</html>

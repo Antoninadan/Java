@@ -5,8 +5,12 @@ import com.example.autospring.repository.AutoRepository;
 import com.example.autospring.repository.ManufactorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -19,14 +23,20 @@ public class ManufactorController {
         this.manufactorRepository = manufactorRepository;
     }
 
-    @ModelAttribute("allManufactor")
-    public List<Manufactor> allUsers() {
-//        Manufactor manufactor1 = new Manufactor("Toyota");
-//        Manufactor manufactor2 = new Manufactor("Mercedes");
+    @RequestMapping(value = "/manufactor-list", method = RequestMethod.GET)
+    public ModelAndView showAllAuto(ModelAndView modelAndView) {
+        modelAndView.setViewName("manufactor_list");
+        modelAndView.addObject("allManufactor", manufactorRepository.findAll());
+        return modelAndView;
+    }
 
-        List<Manufactor> manufactorList= manufactorRepository.findAll();
-        System.out.println(manufactorList);
-        return manufactorList;
+
+    @RequestMapping(value = "/manufactor-create", method = RequestMethod.POST)
+    public boolean create(HttpServletRequest request) {
+
+        Manufactor manufactor = new Manufactor("BMW");
+
+        return manufactorRepository.save(manufactor) != null;
     }
 
 }
