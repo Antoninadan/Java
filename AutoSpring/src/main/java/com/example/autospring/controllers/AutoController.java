@@ -6,6 +6,7 @@ import com.example.autospring.repository.AutoRepository;
 import com.example.autospring.repository.ManufactorRepository;
 import com.sun.deploy.net.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -62,11 +63,14 @@ public class AutoController {
     }
 
 
-
-//    // paginator
+//    // with paginator
 //    @RequestMapping(value = "/auto-list", method = RequestMethod.GET)
-//    public Page<Auto> findAll(ModelAndView modelAndView) {
-//        modelAndView.addObject("allAuto", autoRepository.findAll());
-//        return autoRepository.findAll(PageRequest.of(0, 4));
+//    public ModelAndView showAllAuto(ModelAndView modelAndView) {
+//        modelAndView.setViewName("auto_list");
+//        modelAndView.addObject("allAuto", autoRepository.findAll(PageRequest.of(0, 4)));
+//
+//        return modelAndView;
 //    }
+
+
 }
