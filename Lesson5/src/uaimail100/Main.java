@@ -33,8 +33,8 @@ public class Main {
 //		b = a;
 //		
 //		for (int i = 0; i < b.length; i++)	{
-//			System.out.println(b[i]);
-//		}
+////			System.out.println(b[i]);
+////		}
 //		
 //		int[] c = new int[] {1, 2, 8, 89, 90};
 //		int[] d = new int[4];
@@ -54,13 +54,13 @@ public class Main {
 //		
 //		// сортировка
 //		int[] g = new int[] {5,3,6,7,8,8,7};
-//		
+//
 //		Arrays.sort(g);
-//		System.out.println(Arrays.toString(g)); 
-//		
+//		System.out.println(Arrays.toString(g));
+//
 //		// filling
 //		Arrays.fill(g, 6);
-//		System.out.println(Arrays.toString(g)); 
+//		System.out.println(Arrays.toString(g));
 	
 //		//foreach  - токо получение!!!
 //		int summa = 0;
