@@ -63,6 +63,7 @@
     <session id="1775526294">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -143,7 +144,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550573071564" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson5" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -169,16 +171,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550572478632</updated>
-      <workItem from="1550572482921" duration="589000" />
+      <workItem from="1550572482921" duration="988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589000" />
+    <option name="totallyTimeSpent" value="988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="224" y="57" width="1538" height="1041" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
