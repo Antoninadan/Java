@@ -1,3 +1,4 @@
+// read string from file; read string from url
 package uaimail100;
 
 import java.io.BufferedReader;
@@ -12,20 +13,22 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// read from file  
-		
-		File file = new File("rrr.csv");
-		// System.out.println(loadStrFromFile(f));
+//		// read string from file
+//		File file = new File("rrr.csv");
+//		System.out.println(loadStrFromFile(file));
 
-		// File file = new File("src/uaimail100/Main.java");
+//		// read string from file
+//		File file = new File("src/uaimail100/Main.java");
 //		String str = loadStrFromFile(file);
 //		System.out.println(str);
-//
+
+//		// read string from file, another method
 //		String str2 = loadStrFromFileBuff(file);
 //		System.out.println(str2);
-		
+
+		// read string from url
 		String str3 = loadFromUrl("https://prog.kiev.ua/forum/index.php/topic,3626.75.html");
-			System.out.println(str3);
+		System.out.println(str3);
 	}
 
 	public static String loadStrFromFile(File file) {
