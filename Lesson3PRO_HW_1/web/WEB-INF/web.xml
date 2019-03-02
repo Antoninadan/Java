@@ -11,8 +11,8 @@
     </servlet>
 
     <!--<servlet-mapping>-->
-        <!--<servlet-name>mainPage</servlet-name>-->
-        <!--<url-pattern>/login</url-pattern>-->
+    <!--<servlet-name>mainPage</servlet-name>-->
+    <!--<url-pattern>/login</url-pattern>-->
     <!--</servlet-mapping>-->
 
    <!--login-->
