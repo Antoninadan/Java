@@ -7,7 +7,7 @@
 
   <servlet>
     <servlet-name>mainPage</servlet-name>
-    <servlet-class>controller.StartController</servlet-class>
+    <servlet-class>controllers.StartController</servlet-class>
   </servlet>
 
   <!--<servlet-mapping>-->
@@ -18,7 +18,7 @@
   <!--login-->
   <servlet>
     <servlet-name>login</servlet-name>
-    <servlet-class>controller.LoginController</servlet-class>
+    <servlet-class>controllers.LoginController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -29,7 +29,7 @@
   <!--article remove-->
   <servlet>
     <servlet-name>articleRemove</servlet-name>
-    <servlet-class>controller.ArticleRemoveController</servlet-class>
+    <servlet-class>controllers.ArticleRemoveController</servlet-class>
   </servlet>
 
   <servlet-mapping>

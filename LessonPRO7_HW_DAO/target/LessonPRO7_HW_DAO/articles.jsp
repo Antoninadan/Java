@@ -1,4 +1,4 @@
-<%@ page import="model.Article" %>
+<%@ page import="models.Article" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
 <%--
