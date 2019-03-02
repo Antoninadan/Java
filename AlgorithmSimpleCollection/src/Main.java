@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -46,6 +47,31 @@ public class Main {
 //        // read string from url
 //        String url = "https://prog.kiev.ua/forum/index.php/topic,3626.75.html";
 //        System.out.println(loadFromUrl(url));
+
+//        // exception
+//        double a;
+//        for (;;) {
+//
+//            try {
+//                a = Double.valueOf(JOptionPane.showInputDialog("Input double number")); // if cancel then NULL
+//                if (a < 0) {
+//                    throw new MyException();
+//                }
+//                break; // exit
+//            } catch (NumberFormatException e) {
+//                JOptionPane.showMessageDialog(null, "Error number format");
+//            } catch (NullPointerException e) {
+//                JOptionPane.showMessageDialog(null, "Set default = 10");
+//                a = 10;
+//                break;
+//            } catch (MyException e) {
+//                JOptionPane.showMessageDialog(null, e.getMessage());
+//            }
+//        }
+//        System.out.println(a);
+
+        // inner use exception
+        exceptionInnerUse(-8);
     }
 
     public static int factorial(int n) {
@@ -73,7 +99,7 @@ public class Main {
     public static String loadStrFromFile(File file) {
         String text = "";
         try (Scanner sc = new Scanner(file)) {
-            for (; sc.hasNextLine();) {
+            while (sc.hasNextLine()) {
                 text += sc.nextLine() + System.lineSeparator();
             }
         } catch (IOException e) {
@@ -101,4 +127,9 @@ public class Main {
         return result;
     }
 
+    public static void exceptionInnerUse(double radius) {
+        if(radius < 0) {
+            throw new IllegalArgumentException("my text !!!!!!!!!!!!");
+        }
+    }
 }
