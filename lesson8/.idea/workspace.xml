@@ -54,7 +54,13 @@
       <change beforePath="$PROJECT_DIR$/../LessonPRO7_HW_DAO/target/classes/service/ArticleService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonPRO7_HW_DAO/target/classes/service/UserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestHibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestHibernate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaimail100/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson82/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson82/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson82/rrr.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson82/rrr.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson82/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson82/src/uaimail100/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson83/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson83/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson83/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson83/src/uaimail100/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +73,7 @@
     <session id="2030691423">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="2" />
@@ -214,18 +220,17 @@
       <option name="presentableId" value="Default" />
       <updated>1550853117925</updated>
       <workItem from="1550853127745" duration="1125000" />
-      <workItem from="1550914459959" duration="711000" />
+      <workItem from="1550914459959" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1836000" />
+    <option name="totallyTimeSpent" value="2675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1986" y="143" width="1538" height="1041" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25304466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25304466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -234,7 +239,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3296582" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

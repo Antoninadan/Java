@@ -1,3 +1,5 @@
+// Create folder, file, delete
+
 package uaimail100;
 
 import java.io.File;
@@ -10,9 +12,11 @@ public class Main {
 		
 		File workFolder = new File("."); // link to dir
 		File[] files = workFolder.listFiles();
-//		for (int i = 0; i < files.length; i++) {
-//			System.out.println(files[i]);
-//		}
+		for (int i = 0; i < files.length; i++) {
+			System.out.println(files[i]);
+		}
+
+		System.out.println();
 		
 		File f1 = new File("a.txt"); //absolute address or not
 		
