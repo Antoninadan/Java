@@ -5,6 +5,6 @@ import java.lang.annotation.*;
 @Retention(value= RetentionPolicy.RUNTIME) // when it runs
 
 public @interface MyAnnotation {
-    String param1() default "string"; // значение параметра
-    String param2();
+    int a();
+    int b();
 }
