@@ -21,14 +21,14 @@ public class Baby {
 	}
 	
 	public String playWith(Play someThing) {   // переменная типа Interface
-		String result = "I want to play" + someThing;
+		String result = "I want to play " + someThing;
 		
 		if (!someThing.canPlay()) {
 			result += System.lineSeparator() + ":(";
 		} else {
 			result += System.lineSeparator() + ":) " + someThing.play();
 		}
-		
+		System.out.println();
 		return result;
 	}
 }
