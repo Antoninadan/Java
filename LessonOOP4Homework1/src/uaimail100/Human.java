@@ -1,10 +1,13 @@
 package uaimail100;
 
-public class Human {
+import java.io.Serializable;
+
+public class Human implements Serializable {
 	private String firstName;
 	private String lastName;
 	private int age;
 	private int sex; // 1- male, 2- female
+	private static final long serialVersionUID = 1L;
 	
 	public Human() {
 		super();
@@ -42,8 +45,9 @@ public class Human {
 
 	@Override
 	public String toString() {
-		return "[" + lastName + ", " + firstName  + ", " + age + ", " + sex +"]";
+		return lastName + ", " + firstName  + ", " + age + ", " + sex;
 	}
 
+	
 	
 }
