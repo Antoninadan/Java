@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a752f5-94fb-49e2-a1aa-33d9eeafac25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonOOP4Homework1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmSimpleCollection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmSimpleCollection/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Booking/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Booking/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Booking/out/artifacts/Booking_war/Booking_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/../Booking/out/artifacts/Booking_war/Booking_war.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterfacetestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacetestProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson3PRO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaimail100/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaimail100/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP8/src/uaimail100/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonOOP9/src/uaimail100/Main.java" afterDir="false" />
@@ -33,6 +27,7 @@
     <session id="-1844547120">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -161,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551952362395" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551952394035" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
