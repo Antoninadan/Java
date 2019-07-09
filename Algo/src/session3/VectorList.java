@@ -22,7 +22,7 @@ public class VectorList {
     }
 
     public void remove(int el) {
-        // TODO
+        System.arraycopy(vector, el + 1, vector, el, length--);
     }
 
     @Override
