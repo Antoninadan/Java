@@ -9,13 +9,19 @@ import java.util.List;
 
 public class VectorListGenericTest {
     public static void main(String[] args) {
+        // test iterator
         List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
         list.add(4);
+        System.out.println("list = " + list);
+
         Iterator<Integer> iterator = list.iterator();
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
-            list.add(5); // concurrent
+
+//            list.add(5); // concurrent error
+            iterator.remove();
         }
+        System.out.println("list = " + list);
 
         VectorListGeneric<Integer> vectorList = new VectorListGeneric<>();
         vectorList.add(1);
