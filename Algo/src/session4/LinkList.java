@@ -5,6 +5,10 @@ public class LinkList {
         int value;
         Node next;
         public Node(int value, Node next) { this.value = value;this.next = next; }
+        public int getValue() {
+            return value;
+        }
+
         public void setNext(Node next) { this.next = next;}
         @Override public String toString() {return String.valueOf(value);}
     }
@@ -13,7 +17,13 @@ public class LinkList {
     int length = 0;
 
     public int get(int index) {
-        return 0;
+        int indexCounter = 0;
+        Node next = head;
+        while(index != indexCounter) {
+            next = next.next;
+            indexCounter++;
+        }
+        return next.getValue();
     }
 
     public void addHead(int el) {

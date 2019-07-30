@@ -16,7 +16,8 @@ public class LinkListTest {
         list.addHead(4);
         list.addHead(5);
         list.addHead(6);
-        System.out.println(list.get(2)); // 4
+
         System.out.println(list);
+        System.out.println("list.get(2) = " + list.get(2)); // 4
     }
 }

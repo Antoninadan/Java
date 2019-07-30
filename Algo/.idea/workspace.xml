@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="070a23b7-8806-43e7-8d67-79e07ecc87f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session4/VectorListGenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/session4/VectorListGenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/session4/LinkList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/session4/LinkList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/session4/LinkList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/session4/LinkList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/session4/LinkListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/session4/LinkListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo/session4/VectorListGenericTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo/session4/VectorListGenericTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session4/LinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/session4/LinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session4/LinkListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/session4/LinkListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/out/production/AlgorithmRandomCalculateTime/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/out/production/AlgorithmRandomCalculateTime/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmRandomCalculateTime/src/Main.java" afterDir="false" />
@@ -59,28 +64,29 @@
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="740" />
+          <entry key="java" value="3145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="740" />
+          <entry key="JAVA" value="3145" />
         </counts>
       </usages-collector>
     </session>
@@ -88,37 +94,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/session3/VectorListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/session4/LinkList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-              <folding>
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/session3/VectorList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -126,29 +105,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/session4/LinkListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/session4/VectorListGeneric.java">
+        <entry file="file://$PROJECT_DIR$/src/session5/ArrayUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/session5/ArrayUtilTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/session5/RecurEx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="74" column="40" lean-forward="true" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/session5/MyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1513">
+              <caret line="89" column="48" lean-forward="true" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/session4/VectorListGenericTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="153">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,8 +205,12 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>string</find>
+    </findStrings>
     <replaceStrings>
       <replace />
+      <replace>str</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Java\Git\Java\Algo</dir>
@@ -223,11 +230,15 @@
         <option value="$PROJECT_DIR$/src/session3/MapEx.java" />
         <option value="$PROJECT_DIR$/src/session3/VectorList.java" />
         <option value="$PROJECT_DIR$/src/session3/VectorListTest.java" />
-        <option value="$PROJECT_DIR$/src/session4/LinkList.java" />
-        <option value="$PROJECT_DIR$/src/session4/LinkListTest.java" />
         <option value="$PROJECT_DIR$/src/session4/VectorListGeneric.java" />
         <option value="$PROJECT_DIR$/src/session5/VectorListGenericTest.java" />
         <option value="$PROJECT_DIR$/src/session4/VectorListGenericTest.java" />
+        <option value="$PROJECT_DIR$/src/session4/LinkList.java" />
+        <option value="$PROJECT_DIR$/src/session4/LinkListTest.java" />
+        <option value="$PROJECT_DIR$/src/session5/ArrayUtilTest1.java" />
+        <option value="$PROJECT_DIR$/src/session5/ArrayUtil.java" />
+        <option value="$PROJECT_DIR$/src/session5/RecurEx.java" />
+        <option value="$PROJECT_DIR$/src/session5/MyTest.java" />
       </list>
     </option>
   </component>
@@ -237,8 +248,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2069" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-15" />
+    <option name="y" value="15" />
     <option name="width" value="1778" />
     <option name="height" value="1207" />
   </component>
@@ -251,6 +263,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,20 +281,18 @@
               <item name="Algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="session4" type="462c0819:PsiDirectoryNode" />
+              <item name="session5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562700161533" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564242499795" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -307,13 +319,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VectorListGenericTest">
-    <configuration name="FunctionComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="session1.FunctionComparator" />
+  <component name="RunManager" selected="Application.MyTest">
+    <configuration name="ArrayUtilTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="session5.ArrayUtilTest1" />
       <module name="Algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="session1.*" />
+          <option name="PATTERN" value="session5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -321,12 +333,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="session3.MapEx" />
+    <configuration name="LinkListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="session4.LinkListTest" />
       <module name="Algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="session3.*" />
+          <option name="PATTERN" value="session4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,12 +346,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Summator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="session1.Summator" />
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="session5.MyTest" />
       <module name="Algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="session1.*" />
+          <option name="PATTERN" value="session5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecurEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="session5.RecurEx" />
+      <module name="Algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -360,33 +385,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VectorListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="session3.VectorListTest" />
-      <module name="Algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="session3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.FunctionComparator" />
-      <item itemvalue="Application.Summator" />
-      <item itemvalue="Application.MapEx" />
-      <item itemvalue="Application.VectorListTest" />
       <item itemvalue="Application.VectorListGenericTest" />
+      <item itemvalue="Application.LinkListTest" />
+      <item itemvalue="Application.ArrayUtilTest1" />
+      <item itemvalue="Application.RecurEx" />
+      <item itemvalue="Application.MyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest" />
+        <item itemvalue="Application.RecurEx" />
+        <item itemvalue="Application.ArrayUtilTest1" />
+        <item itemvalue="Application.LinkListTest" />
         <item itemvalue="Application.VectorListGenericTest" />
-        <item itemvalue="Application.VectorListTest" />
-        <item itemvalue="Application.MapEx" />
-        <item itemvalue="Application.FunctionComparator" />
-        <item itemvalue="Application.Summator" />
       </list>
     </recent_temporary>
   </component>
@@ -408,16 +420,22 @@
       <workItem from="1562393624410" duration="3492000" />
       <workItem from="1562594463212" duration="4921000" />
       <workItem from="1562737650096" duration="3124000" />
+      <workItem from="1562858881381" duration="1249000" />
+      <workItem from="1563280805857" duration="6164000" />
+      <workItem from="1563812658244" duration="1916000" />
+      <workItem from="1564237337876" duration="3239000" />
+      <workItem from="1564494611646" duration="10818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27380000" />
+    <option name="totallyTimeSpent" value="50766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2069" y="0" width="1778" height="1207" extended-state="0" />
+    <frame x="-15" y="15" width="1778" height="1207" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16705471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1757858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -426,7 +444,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32898417" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32898417" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,7 +453,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32902032" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32809612" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -516,10 +534,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/session4/VectorListGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/session4/LinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/session4/LinkListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="340">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/session5/ArrayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/session5/ArrayUtilTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/session4/VectorListGenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -552,34 +611,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/session4/LinkList.java">
+    <entry file="file://$PROJECT_DIR$/src/session5/RecurEx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="74" column="40" lean-forward="true" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/session4/VectorListGeneric.java">
+    <entry file="file://$PROJECT_DIR$/src/session5/MyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/session4/VectorListGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1513">
+          <caret line="89" column="48" lean-forward="true" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
         </state>
       </provider>
     </entry>
